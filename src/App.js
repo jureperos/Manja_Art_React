@@ -1,14 +1,13 @@
 import './App.css';
-import Header from './Header.js'
-import Footer from './Footer.js'
+import { Routes, Route } from "react-router-dom"
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <div className="main-content"></div>
-      <Footer/>
-    </div>
+      <Routes>
+        <Route path='/' element= { <Header/> } />
+      </Routes>
   );
 }
 
