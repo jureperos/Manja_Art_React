@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(237, 237, 237);
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(21, 20, 20);
+    height: 60px;
+}
+
+.nav-list {
+    background-color: rgb(21, 20, 20);
+    width: fit-content;
+    padding: 1rem;
+
+}
+
+.nav-list.open {
+    display: grid;
+
+}
+
+.nav-list.closed {
+    display: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.nav-list a:hover {
+    background-color: beige;
+}
+
+.nav-list a:active {
+    background-color: aqua;
+}
+
+.menu-icon {
+    color: white;
+    font-size: 2rem;
+}
+
+.menu-button {
+    background-color: rgb(21, 20, 20);
+    border: none;
+}
+
+.banner {
+    width: auto;
+    height: 4rem;
+}
