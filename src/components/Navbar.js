@@ -14,6 +14,7 @@ function Navbar() {
             if (!event.target.closest('.menu-button')) {
                 setMenuOpen(false);
             }
+
         };
         document.addEventListener('click', handleClickOutside);
         return () => {
@@ -24,29 +25,40 @@ function Navbar() {
     return (
         <div>
             <div className='navbar'>
-                <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}>
+                <button className="menu-button" 
+                onClick={ function () { setMenuOpen(!menuOpen) }}>
                     <IconContext.Provider value={{ className: 'menu-icon' }}>
                         <GoThreeBars />
                     </IconContext.Provider>
                 </button>
                 <div className={`nav-list ${menuOpen ? 'open' : 'closed'}`}>
 
-                    <Link className="menu-item" to={'/'}>
+                    <Link 
+                    className={`menu-item ${menuOpen ? 'open' : 'closed'} first`} 
+                    to={'/'}>
                         Domov
                     </Link>
 
-                    <Link className="menu-item" to={'/portfolio'}>
+                    <Link 
+                    className={`menu-item ${menuOpen ? 'open' : 'closed'} second`} 
+                    to={'/portfolio'}>
                         Portfelj
                     </Link>
 
-                    <Link className=" menu-item" to={'/naprodaj'}>
+                    <Link 
+                    className={`menu-item ${menuOpen ? 'open' : 'closed'} third`} 
+                    to={'/naprodaj'}>
                         Naprodaj
                     </Link>
 
-                    <Link className=" menu-item" to={'/zivljenjepis'}> Življenjepis
+                    <Link 
+                    className={`menu-item ${menuOpen ? 'open' : 'closed'} fourth`} 
+                    to={'/zivljenjepis'}> Življenjepis
                     </Link>
 
-                    <Link className=" menu-item" to={'/kontakt'}>
+                    <Link 
+                    className={`menu-item ${menuOpen ? 'open' : 'closed'} fifth`} 
+                    to={'/contact'}>
                         Kontakt
                     </Link>
                 </div>
