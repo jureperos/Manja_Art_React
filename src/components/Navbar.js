@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom"
 import './Navbar.css'
 import { GoThreeBars } from 'react-icons/go'
 import { IconContext } from 'react-icons';
 import image from './assets/Cover_odzadje.png'
 
+
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (!event.target.closest('.menu-button')) {
+                setMenuOpen(false);
+            }
+        };
+        document.addEventListener('click', handleClickOutside);
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [menuOpen]);
 
     return (
         <div>
@@ -18,27 +31,27 @@ function Navbar() {
                 </button>
                 <div className={`nav-list ${menuOpen ? 'open' : 'closed'}`}>
 
-                    <Link className=" menu-item" to={'/'}>
-                        Domov {' '} {' '} <span>{'\u2B24'}</span>
+                    <Link className="menu-item" to={'/'}>
+                        Domov
                     </Link>
 
                     <Link className="menu-item" to={'/portfolio'}>
-                        Portfelj {' '} {' '} <span>{'\u2B24'}</span>
+                        Portfelj
                     </Link>
 
                     <Link className=" menu-item" to={'/naprodaj'}>
-                        Naprodaj {' '} {' '} <span>{'\u2B24'}</span>
+                        Naprodaj
                     </Link>
 
-                    <Link className=" menu-item" to={'/zivljenjepis'}> Življenjepis {' '} {' '} <span>{'\u2B24'}</span>
+                    <Link className=" menu-item" to={'/zivljenjepis'}> Življenjepis
                     </Link>
 
                     <Link className=" menu-item" to={'/kontakt'}>
-                        Kontakt {' '} {' '} <span>{'\u2B24'}</span>
+                        Kontakt
                     </Link>
                 </div>
             </div>
-            <div className='banner'><img className="MainImg" src={ image } alt="" /></div>
+            <img className="banner" src={ image } alt="" />
         </div>
     )
 }
