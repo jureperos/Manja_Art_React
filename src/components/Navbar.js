@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom"
 import './Navbar.css'
 import { GoThreeBars } from 'react-icons/go'
 import { IconContext } from 'react-icons';
-import image from './assets/Cover_odzadje.png'
+import banner from './assets/Cover_odzadje.png'
 
 
 function Navbar() {
@@ -63,7 +63,7 @@ function Navbar() {
                     </Link>
                 </div>
             </div>
-            <img className="banner" src={ image } alt="" />
+            <img className="banner" src={ banner } alt="" />
         </div>
     )
 }

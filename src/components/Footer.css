@@ -1,17 +1,15 @@
 .contact {
     background-color: rgb(21, 20, 20);
     color: white;
-    display: flex;
-    align-items: center;
+    padding: 2rem;
 }
 
 .social {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 5vw;
     font-size: 2rem;
     align-items: center;
-    margin: 30px;
 }
 
 .social a {
@@ -19,7 +17,7 @@
 }
 
 /* underline transition */
-.contact-icons::after {
+.contact-icons::before {
     content: "";
     display: block;
     position: relative;
@@ -29,9 +27,19 @@
     transition: 0.5s ease-in-out;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
+    top: 40px;
 }
 
-.contact-icons:hover::after {
+.contact-icons:hover::before {
     width: 100%;
+}
+
+.contact-icons:hover {
+    cursor: pointer;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    font-size: medium;
 }

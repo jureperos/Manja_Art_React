@@ -1,4 +1,5 @@
 import './Footer.css';
+import { useState, useEffect } from 'react';
 import { IconContext } from 'react-icons';
 import { FaFacebookF,
         FaInstagram, 
@@ -8,6 +9,9 @@ import { FaFacebookF,
 
 
 function Footer() {
+    function emailWindow() {
+        const emailwin = window.open()
+    }
 
     return (
     <div className='contact'>
@@ -29,29 +33,13 @@ function Footer() {
                     <FaLinkedinIn />
                 </IconContext.Provider>
             </a>
-
-            
-            <div className='contact-icons'>
-                <IconContext.Provider value={{ className: 'footer-icon' }}>
-                    <FaEnvelope />
-                </IconContext.Provider>
-            </div>
         </div>
+        <div 
+            className= 'email' > manjatisler.art@gmail.com
+        </div>
+
     </div>
     )
 }
 
 export default Footer
-
-        // <ul className={"contact-list"}>
-        //     <li className={"email"}>
-        //         <p>manjatisler.art@gmail.com</p>
-        //     </li>
-
-        //     <li className={`Icon Facebook`}><a href="https://www.facebook.com/ManjaTislerArt/" target="_blank">
-        //         <i className="fa fa-facebook fa-2x"></i></a></li>
-
-        //     <li className="Icon"><a href="https://www.instagram.com/manjatisler/" target="_blank"><i className="fa fa-instagram fa-2x"></i></a></li>
-
-        //     <li className={`Icon Linkedin`}><a href="https://www.linkedin.com/in/manja-ti%C5%A1ler-895b8a135/" target="_blank"><i className="fa fa-linkedin fa-2x"></i></a></li>
-        // </ul>
