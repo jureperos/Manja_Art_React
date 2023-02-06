@@ -34,30 +34,30 @@ function Navbar() {
                 <div className={`nav-list ${menuOpen ? 'open' : 'closed'}`}>
 
                     <Link 
-                    className={`menu-item ${menuOpen ? 'open' : 'closed'} first`} 
+                    className={`menu-item first`} 
                     to={'/'}>
                         Domov
                     </Link>
 
                     <Link 
-                    className={`menu-item ${menuOpen ? 'open' : 'closed'} second`} 
+                    className={`menu-item second`} 
                     to={'/portfolio'}>
                         Portfelj
                     </Link>
 
                     <Link 
-                    className={`menu-item ${menuOpen ? 'open' : 'closed'} third`} 
+                    className={`menu-item third`} 
                     to={'/naprodaj'}>
                         Naprodaj
                     </Link>
 
                     <Link 
-                    className={`menu-item ${menuOpen ? 'open' : 'closed'} fourth`} 
+                    className={`menu-item fourth`} 
                     to={'/zivljenjepis'}> Življenjepis
                     </Link>
 
                     <Link 
-                    className={`menu-item ${menuOpen ? 'open' : 'closed'} fifth`} 
+                    className={`menu-item fifth`} 
                     to={'/contact'}>
                         Kontakt
                     </Link>

@@ -28,10 +28,12 @@
 .nav-list a {
     text-decoration: none;
     color: white;
+    border-bottom-style: solid;
+    margin: 0 1rem;
 }
 
 .nav-list a:hover {
-    background-color: beige;
+    background-color: rgb(35, 33, 33);
 }
 
 .nav-list a:active {
@@ -50,8 +52,7 @@
 }
 
 .menu-button:hover {
-    background-color: red;
-    transition: 1s;
+    cursor: pointer;
 }
 
 .banner {
@@ -59,70 +60,71 @@
     height: 19rem;
 }
 
-.menu-item.closed {
+.nav-list.closed a.menu-item {
     padding: 0.5rem 1rem 1rem 1rem;
 }
 
-.menu-item.open {
+.nav-list.open a.menu-item {
     padding: 0.5rem 1rem 1rem 1rem;
 }
 
-.menu-item.open.first {
+.nav-list.open a.menu-item.first {
     position: relative;
     right: 0;
     transition: right 0.2s;
 }
 
-.menu-item.closed.first {
+.nav-list.closed a.menu-item.first {
     position: relative;
-    right: 8rem;
-    transition: right 1s;
+    right: 9rem;
+    transition: right 0.8s;
 }
 
-.menu-item.open.second {
+.nav-list.open a.menu-item.second {
     position: relative;
     right: 0;
     transition: right 0.4s;
 }
 
-.menu-item.closed.second {
+.nav-list.closed a.menu-item.second {
     position: relative;
-    right: 8rem;
-    transition: right 0.8s;
+    right: 9rem;
+    transition: right 0.6s;
 }
 
-.menu-item.open.third {
+.nav-list.open a.menu-item.third {
     position: relative;
     right: 0;
     transition: right 0.6s;
 }
 
-.menu-item.closed.third {
+.nav-list.closed a.menu-item.third {
     position: relative;
-    right: 8rem;
-    transition: right 0.6s;
+    right: 9rem;
+    transition: right 0.5s;
 }
 
-.menu-item.open.fourth {
+.nav-list.open a.menu-item.fourth {
     position: relative;
     right: 0;
     transition: right 0.8s;
 }
 
-.menu-item.closed.fourth {
+.nav-list.closed a.menu-item.fourth {
     position: relative;
-    right: 8rem;
-    transition: right 0.4s;
+    right: 9rem;
+    transition: right 0.3s;
 }
 
-.menu-item.open.fifth {
+.nav-list.open a.menu-item.fifth {
     position: relative;
     right: 0;
     transition: right 1s;
+    border-bottom: none;
 }
 
-.menu-item.closed.fifth {
+.nav-list.closed a.menu-item.fifth {
     position: relative;
-    right: 8rem;
-    transition: right 0.2s;
+    right: 9rem;
+    transition: right 0.1s;
 }

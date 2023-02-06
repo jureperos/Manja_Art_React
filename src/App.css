@@ -2,4 +2,10 @@ body {
     background-color: rgb(237, 237, 237);
     margin: 0;
     font-family: 'Roboto Slab', serif;
+    display: block;
+}
+
+#scroll-top {
+    right: 23px;
+    bottom: 30px;
 }
