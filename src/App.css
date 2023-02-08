@@ -1,3 +1,7 @@
+.app {
+    height: 100%;
+}
+
 #scroll-top {
     right: 23px;
     bottom: 30px;

@@ -42,4 +42,14 @@
     display: flex;
     align-items: center;
     font-size: medium;
+    padding-left: 8px;
+}
+
+
+@media only screen and (min-width: 650px) {
+    .contact {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
 }

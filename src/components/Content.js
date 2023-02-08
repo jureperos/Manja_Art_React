@@ -9,7 +9,7 @@ function Content () {
     return (
         <div className="content">
             <Navbar />
-            <div>
+            <div className=".routes">
                 <Routes>
                     <Route path='/' element={<Home/>} />
                 </Routes>

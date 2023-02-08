@@ -13,7 +13,7 @@ function MyHelmet () {
                 <title>ManjaTislerArt</title>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Inter:wght@400;600;700&family=Roboto+Slab&family=Sacramento&display=swap" rel="stylesheet" />
             </Helmet>
         </>
     )

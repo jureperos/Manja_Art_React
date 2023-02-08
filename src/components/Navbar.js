@@ -25,43 +25,46 @@ function Navbar() {
     return (
         <div>
             <div className='navbar'>
-                <button className="menu-button" 
-                onClick={ function () { setMenuOpen(!menuOpen) }}>
-                    <IconContext.Provider value={{ className: 'menu-icon' }}>
-                        <GoThreeBars />
-                    </IconContext.Provider>
-                </button>
-                <div className={`nav-list ${menuOpen ? 'open' : 'closed'}`}>
+                <div>
+                    <button className="menu-button" 
+                    onClick={ function () { setMenuOpen(!menuOpen) }}>
+                        <IconContext.Provider value={{ className: 'menu-icon' }}>
+                            <GoThreeBars />
+                        </IconContext.Provider>
+                    </button>
+                    <div className={`nav-list ${menuOpen ? 'open' : 'closed'}`}>
 
-                    <Link 
-                    className={`menu-item first`} 
-                    to={'/'}>
-                        Domov
-                    </Link>
+                        <Link 
+                        className={`menu-item first`} 
+                        to={'/'}>
+                            Domov
+                        </Link>
 
-                    <Link 
-                    className={`menu-item second`} 
-                    to={'/portfolio'}>
-                        Portfelj
-                    </Link>
+                        <Link 
+                        className={`menu-item second`} 
+                        to={'/portfolio'}>
+                            Portfelj
+                        </Link>
 
-                    <Link 
-                    className={`menu-item third`} 
-                    to={'/naprodaj'}>
-                        Naprodaj
-                    </Link>
+                        <Link 
+                        className={`menu-item third`} 
+                        to={'/naprodaj'}>
+                            Naprodaj
+                        </Link>
 
-                    <Link 
-                    className={`menu-item fourth`} 
-                    to={'/zivljenjepis'}> Življenjepis
-                    </Link>
+                        <Link 
+                        className={`menu-item fourth`} 
+                        to={'/zivljenjepis'}> Življenjepis
+                        </Link>
 
-                    <Link 
-                    className={`menu-item fifth`} 
-                    to={'/contact'}>
-                        Kontakt
-                    </Link>
+                        <Link 
+                        className={`menu-item fifth`} 
+                        to={'/contact'}>
+                            Kontakt
+                        </Link>
+                    </div>
                 </div>
+                <div className='signature'>Manja Tišler</div>
             </div>
             <img className="banner" src={ banner } alt="" />
         </div>

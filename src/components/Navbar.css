@@ -1,12 +1,14 @@
 .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    justify-items: end;
+    justify-content: left;
     position: sticky;
     top: 0;
     z-index: 1;
     background-color: rgb(21, 20, 20);
     height: 60px;
+    margin-top: -3px;
 }
 
 .nav-list.open {
@@ -138,6 +140,14 @@
     position: relative;
     right: 9rem;
     transition: right 0.1s;
+}
+
+.signature {
+    color: white;
+    width: max-content;
+    font-family: 'Great Vibes', cursive;
+    padding: 1rem 2rem 0 0;
+    font-size: x-large;
 }
 
 @media only screen and (min-width: 900px) {

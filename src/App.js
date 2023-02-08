@@ -6,7 +6,7 @@ import Content from './components/Content';
 function App() {
 
   return (
-      <div>
+      <div className='app'>
         <MyHelmet />
         <ScrollToTop smooth='True' id='scroll-top'/>
         <Content />

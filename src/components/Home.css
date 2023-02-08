@@ -5,37 +5,37 @@
 }
 
 .face-img {
+    padding-top: 2rem;
     width: 200px;
+}
+
+.image-border {
+    border-bottom-style: double;
+    padding-bottom: 2rem;
+
 }
 
 .intro-text {
-    padding: 0 3rem;
+    padding: 2rem 3rem;
     text-align: justify;
-}
-
-.intro-text::before {
-    content: "";
-    position: relative;
-    left: 50%;
-    display: block;
-    background-color: gray;
-    height: 2px;
-    width: 200px;
-    margin-left: -94px;
-    margin-bottom: 3rem;
 }
 
 .phrase {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 0 8rem;
+}
+
+.phrase h1 {
+    padding-bottom: 2rem;
     border-bottom: solid 3px;
+    margin: 0 100%;
 }
 
 .more-intro {
     text-align: justify;
     padding: 0 3rem;
+    padding-top: 2rem;
 }
 
 .napolju-img {
@@ -46,3 +46,44 @@
     padding: 1rem 0 2rem 0;
 }
 
+@media only screen and (min-width: 650px) {
+    .intro {
+        flex-direction: row;
+        padding-top: 3rem;
+    }
+
+    .image-border {
+        border-bottom: none;
+        border-right-style: double;
+        padding-right: 3rem;
+        padding-bottom: 0;
+        padding-top: 0;
+        }
+
+    .phrase h1 {
+        margin: 0 30%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .intro-text {
+        padding: 0 6rem;
+    }
+
+        .more-intro {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            margin-bottom: 10%;
+            align-items: center;
+        }
+    
+        .more-intro p {
+            padding: 3rem 0;
+        }
+    
+        .napolju-img {
+            height: 400px;
+            width: auto;
+            
+        }
+}

@@ -4,14 +4,10 @@ import { IconContext } from 'react-icons';
 import { FaFacebookF,
         FaInstagram, 
         FaLinkedinIn,
-        FaEnvelope
         } from "react-icons/fa";
 
 
 function Footer() {
-    function emailWindow() {
-        const emailwin = window.open()
-    }
 
     return (
     <div className='contact'>

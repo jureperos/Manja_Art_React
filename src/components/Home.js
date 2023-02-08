@@ -7,7 +7,7 @@ function Home () {
     return (
         <div>
             <div className='intro'>
-                <img src= { geOdzadje } alt="" className='face-img'/>
+                <img src= { geOdzadje } alt="" className={`face-img image-border`}/>
                 <p className="intro-text">Sem Manja Tišler, varstvena biologinja, ki ji umetnost predstavlja ključen del karierne poti. Rada delam z različnimi
                 mediji (oljne barve, akril, pasteli, akvarel, gvaš, grafit in ink), vendar najraje ustvarjam z akvareli in suhimi
                 pasteli. Moje delo pa ni le biološko, saj poleg bioloških motivov vključim vse, kar pritegne moj pogled. Dobrodošli na
