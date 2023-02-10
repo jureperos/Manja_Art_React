@@ -1,8 +1,10 @@
 import { Routes, Route } from "react-router-dom"
+import './Content.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Home from './Home';
-import './Content.css';
+import RastlinePublic from "./portfolio/RastlinePublic";
+import Portfelj from "./portfolio/Portfelj";
 
 
 function Content () {
@@ -11,7 +13,11 @@ function Content () {
             <Navbar />
             <div className=".routes">
                 <Routes>
-                    <Route path='/' element={<Home/>} />
+                    <Route path='/' element={ <Home/> } />
+                    <Route path='/portfolio' >
+                        <Route index element={ <Portfelj/> }  />
+                        <Route path="rastline" element={ <RastlinePublic /> } />
+                    </Route>
                 </Routes>
             </div>  
             <Footer />
