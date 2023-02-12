@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Home from './Home';
 import RastlinePublic from "./portfolio/RastlinePublic";
 import Portfelj from "./portfolio/Portfelj";
+import PortfolioNav from "./portfolio/PortfolioNav";
 
 
 function Content () {
@@ -14,7 +15,7 @@ function Content () {
             <div className=".routes">
                 <Routes>
                     <Route path='/' element={ <Home/> } />
-                    <Route path='/portfolio' >
+                    <Route path='/portfolio' element={ <PortfolioNav /> } >
                         <Route index element={ <Portfelj/> }  />
                         <Route path="rastline" element={ <RastlinePublic /> } />
                     </Route>

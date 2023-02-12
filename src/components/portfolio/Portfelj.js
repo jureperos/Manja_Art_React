@@ -1,10 +1,8 @@
-import PortfeljLink from "./PortfeljLink"
 
 function Portfelj() {
     return (
         <div>
-            <h1>Portfelj dela!!!!!!</h1>
-            <PortfeljLink />
+            <h1>To je Portfelj!</h1>
         </div>
     )
 }
