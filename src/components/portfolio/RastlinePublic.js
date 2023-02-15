@@ -4,30 +4,42 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import './RastlinePublic.css';
 import { useState } from 'react';
 import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css"
-
+import "yet-another-react-lightbox/styles.css";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import "yet-another-react-lightbox/plugins/captions.css";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 
 function RastlinePublic () {
     const [lBoxOpen, setlBoxOpen] = useState(false)
-
-    const currIndex = function getIndex(index) {return index}
+    const [currIndex, setcurrIndex] = useState(0);
 
 
     function openLightbox() {
         if (lBoxOpen === true) {
-            const slides = RastlineArr.map(
-                (rastline) => {return {src: rastline.src};})
-            console.log(slides)
+            //all paths of the images are stored as an object for lightbox use
+            const slides = RastlineArr.map((rastline) => {
+                return { 
+                    src: rastline.src,
+                    title: rastline.title,
+                    description: rastline.description,
+                };
+            });
+
             return (
-                <div>
+                <>
                     <Lightbox 
                         open={lBoxOpen}
                         close={() => setlBoxOpen(false)}
                         index= {currIndex}
                         slides={slides}
+                        plugins={[Captions, Thumbnails]}
+                        thumbnails={{
+                            
+                        }}
                     />
-                </div>
+                </>
             )
             
         } else return null
@@ -37,13 +49,13 @@ function RastlinePublic () {
 
     return (
         //using a map method to iterate and access the RastlineArr array objects
-        <div>
+        <div className="img-container">
             {RastlineArr.map((rastline) => {
                 return (
                     <div onClick={
                         () => {
                             setlBoxOpen(true);
-                            getIndex(rastline.index);
+                            setcurrIndex(rastline.index);
                         }
                     } >
                         <LazyLoadImage 
@@ -53,7 +65,7 @@ function RastlinePublic () {
                             offset={ 100 }
                             effect='blur'
                         />
-                        <p>{rastline.text}</p>
+                        <p>{rastline.title}</p>
                     </div>
                 )
             })}
