@@ -6,6 +6,8 @@ import Home from './Home';
 import RastlinePublic from "./portfolio/RastlinePublic";
 import Portfelj from "./portfolio/Portfelj";
 import PortfolioNav from "./portfolio/PortfolioNav";
+import MyLightbox from "./portfolio/MyLightbox";
+
 
 
 function Content () {

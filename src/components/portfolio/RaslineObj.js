@@ -23,60 +23,15 @@
 
 const RastlineArr = [
     {
-        path: require('./assets/rastline/1_Iris illyrica.jpg'),
-        text: 'baug moj dragi dejansko dela!!!'
+        src: require('./assets/rastline/1_Iris illyrica.jpg'),
+        text: 'baug moj dragi dejansko dela!!!',
+        index: 0
     },
     {
-        path: require('./assets/rastline/1_Iris illyrica.jpg'),
-        text: 'baug moj dragi dejansko dela!!!'
-    },
-    {
-        path: require('./assets/rastline/1_Iris illyrica.jpg'),
-        text: 'baug moj dragi dejansko dela!!!'
-    },
-    
-    {
-        path: require('./assets/rastline/1_Iris illyrica.jpg'),
-        text: 'baug moj dragi dejansko dela!!!'
-    },
-    
-    {
-        path: require('./assets/rastline/1_Iris illyrica.jpg'),
-        text: 'baug moj dragi dejansko dela!!!'
-    },
-    
-    {
-        path: require('./assets/rastline/1_Iris illyrica.jpg'),
-        text: 'baug moj dragi dejansko dela!!!'
-    },
-    {
-        path: require('./assets/rastline/1_Iris illyrica.jpg'),
-        text: 'baug moj dragi dejansko dela!!!'
-    },
-    {
-        path: require('./assets/rastline/1_Iris illyrica.jpg'),
-        text: 'baug moj dragi dejansko dela!!!'
-    },
-    {
-        path: require('./assets/rastline/1_Iris illyrica.jpg'),
-        text: 'baug moj dragi dejansko dela!!!'
-    },
-    {
-        path: require('./assets/rastline/1_Iris illyrica.jpg'),
-        text: 'baug moj dragi dejansko dela!!!'
-    },
-    {
-        path: require('./assets/rastline/1_Iris illyrica.jpg'),
-        text: 'baug moj dragi dejansko dela!!!'
-    },
-    {
-        path: require('./assets/rastline/1_Iris illyrica.jpg'),
-        text: 'baug moj dragi dejansko dela!!!'
-    },
-    {
-        path: require('./assets/rastline/1_Iris illyrica.jpg'),
-        text: 'baug moj dragi dejansko dela!!!'
-    },
+        src: require('./assets/rastline/2 Iris illyrica.jpg'),
+        text: 'baug moj dragi dejansko dela!!!',
+        index: 1
+    }
 
 ]
 

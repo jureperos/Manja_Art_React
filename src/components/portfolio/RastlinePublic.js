@@ -3,36 +3,53 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './RastlinePublic.css';
 import { useState } from 'react';
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css"
 
 
 
 function RastlinePublic () {
-    const [ImgOpen, setImgOpen] = useState(false)
+    const [lBoxOpen, setlBoxOpen] = useState(false)
 
-    function whatState() {
-        setImgOpen(!ImgOpen)
-    }
+    const currIndex = function getIndex(index) {return index}
 
-        //finds which image is being clicked so the lightbox opens on that image
-    function lightBoxActivate (path) {
-        if (ImgOpen === false) {
-            const imgPath = path
+
+    function openLightbox() {
+        if (lBoxOpen === true) {
+            const slides = RastlineArr.map(
+                (rastline) => {return {src: rastline.src};})
+            console.log(slides)
             return (
-                
+                <div>
+                    <Lightbox 
+                        open={lBoxOpen}
+                        close={() => setlBoxOpen(false)}
+                        index= {currIndex}
+                        slides={slides}
+                    />
+                </div>
             )
-        } else return console.log('imgopentrue')
+            
+        } else return null
+
     }
+
 
     return (
         //using a map method to iterate and access the RastlineArr array objects
         <div>
             {RastlineArr.map((rastline) => {
                 return (
-                    <div onClick={() => {lightBoxActivate(rastline.path); whatState();}} >
+                    <div onClick={
+                        () => {
+                            setlBoxOpen(true);
+                            getIndex(rastline.index);
+                        }
+                    } >
                         <LazyLoadImage 
                             height={350}
                             alt={ 'nika zaenkrat' }
-                            src={ rastline.path }
+                            src={ rastline.src }
                             offset={ 100 }
                             effect='blur'
                         />
@@ -40,6 +57,8 @@ function RastlinePublic () {
                     </div>
                 )
             })}
+
+            {openLightbox()}
         </div>
     )
 }
