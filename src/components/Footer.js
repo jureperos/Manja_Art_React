@@ -1,5 +1,4 @@
 import './Footer.css';
-import { useState, useEffect } from 'react';
 import { IconContext } from 'react-icons';
 import { FaFacebookF,
         FaInstagram, 

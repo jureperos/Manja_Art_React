@@ -1,0 +1,11 @@
+.link-ctn {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem;
+}
+
+.link-ctn a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+}

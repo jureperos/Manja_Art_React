@@ -1,29 +1,47 @@
 import RastlineArr from "./RaslineObj";
+import ZivaliArr from "./ZivaliObj";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import './RastlinePublic.css';
+import './SetImages.css';
 import { useState } from 'react';
+import { useLocation } from "react-router-dom";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/plugins/captions.css";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
 
 
-function RastlinePublic () {
+function SetImages () {
     const [lBoxOpen, setlBoxOpen] = useState(false)
     const [currIndex, setcurrIndex] = useState(0);
+    const location = useLocation();
+    const path = location.pathname;
+    let imgArray = []
 
+    switch(path) {
+        case '/portfolio':
+            imgArray = RastlineArr;
+            break;
+        case '/portfolio/rastline':
+            imgArray = RastlineArr;
+            break;
+        case '/portfolio/zivali':
+            imgArray = ZivaliArr;
+            break;
+    }
 
     function openLightbox() {
         if (lBoxOpen === true) {
-            //all paths of the images are stored as an object for lightbox use
-            const slides = RastlineArr.map((rastline) => {
+            //iterating through imgArray to populate lightbox slides
+            const slides = imgArray.map((image) => {
                 return { 
-                    src: rastline.src,
-                    title: rastline.title,
-                    description: rastline.description,
+                    src: image.src,
+                    title: image.title,
+                    description: image.description,
                 };
             });
 
@@ -34,7 +52,7 @@ function RastlinePublic () {
                         close={() => setlBoxOpen(false)}
                         index= {currIndex}
                         slides={slides}
-                        plugins={[Captions, Thumbnails]}
+                        plugins={[Captions, Thumbnails, Zoom]}
                         thumbnails={{
                             
                         }}
@@ -46,33 +64,33 @@ function RastlinePublic () {
 
     }
 
-
     return (
-        //using a map method to iterate and access the RastlineArr array objects
+        //using a map method to iterate and access the imgArray array objects
         <div className="img-container">
-            {RastlineArr.map((rastline) => {
+            {imgArray.map((image) => {
                 return (
                     <div onClick={
                         () => {
                             setlBoxOpen(true);
-                            setcurrIndex(rastline.index);
+                            setcurrIndex(image.index);
                         }
                     } >
                         <LazyLoadImage 
-                            height={350}
+                            height={300}
                             alt={ 'nika zaenkrat' }
-                            src={ rastline.src }
+                            src={ image.src }
                             offset={ 100 }
                             effect='blur'
                         />
-                        <p>{rastline.title}</p>
+                        <div className="img-text">
+                            <p>{image.title}</p>
+                        </div>
                     </div>
                 )
             })}
-
             {openLightbox()}
         </div>
     )
 }
 
-export default RastlinePublic
+export default SetImages

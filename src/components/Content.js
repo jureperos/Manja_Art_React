@@ -3,10 +3,8 @@ import './Content.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Home from './Home';
-import RastlinePublic from "./portfolio/RastlinePublic";
-import Portfelj from "./portfolio/Portfelj";
-import PortfolioNav from "./portfolio/PortfolioNav";
-import MyLightbox from "./portfolio/MyLightbox";
+import SetImages from "./portfolio/SetImages";
+import PortfolioLayout from "./portfolio/PortfolioLayout";
 
 
 
@@ -17,9 +15,12 @@ function Content () {
             <div className=".routes">
                 <Routes>
                     <Route path='/' element={ <Home/> } />
-                    <Route path='/portfolio' element={ <PortfolioNav /> } >
-                        <Route index element={ <Portfelj/> }  />
-                        <Route path="rastline" element={ <RastlinePublic /> } />
+                    <Route path='/portfolio' element={ <PortfolioLayout /> } >
+                        <Route index element={ <SetImages/> }  />
+                        <Route path="rastline" element={ <SetImages /> } />
+                        <Route path="zivali" element={ <SetImages /> } />
+                        <Route path="rastline" element={ <SetImages /> } />
+                        <Route path="rastline" element={ <SetImages /> } />
                     </Route>
                 </Routes>
             </div>  
