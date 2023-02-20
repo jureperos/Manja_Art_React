@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.home p {
+    font-size: large;
+}
+
 .face-img {
     padding-top: 2rem;
     width: 200px;
@@ -72,13 +76,13 @@
 
         .more-intro {
             display: grid;
-            grid-template-columns: 0.5fr 1fr;
+            grid-template-columns: 1fr 1fr;
             margin-bottom: 10%;
             align-items: center;
         }
     
         .more-intro p {
-            padding: 3rem 0;
+            padding: 3rem 10%;
         }
     
         .napolju-img {

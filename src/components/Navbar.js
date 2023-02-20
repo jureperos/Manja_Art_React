@@ -1,13 +1,19 @@
 import { useState, useEffect } from 'react';
-import { Link } from "react-router-dom"
-import './Navbar.css'
-import { GoThreeBars } from 'react-icons/go'
+import { Link } from "react-router-dom";
+import './Navbar.css';
+import { GoThreeBars } from 'react-icons/go';
 import { IconContext } from 'react-icons';
-import banner from './assets/Cover_odzadje.png'
-
+import banner from './assets/Cover_odzadje.png';
 
 function Navbar() {
+    const scrollToBottom = () => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth',
+        })
+    }
     const [menuOpen, setMenuOpen] = useState(false);
+
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -21,6 +27,7 @@ function Navbar() {
             document.removeEventListener('click', handleClickOutside);
         };
     }, [menuOpen]);
+
 
     return (
         <div>
@@ -54,12 +61,15 @@ function Navbar() {
 
                         <Link 
                         className={`menu-item fourth`} 
-                        to={'/zivljenjepis'}> Življenjepis
+                        to={'/zivljenjepis'}> 
+                            Življenjepis
                         </Link>
 
                         <Link 
                         className={`menu-item fifth`} 
-                        to={'/contact'}>
+                        to={'#'}
+                        onClick={scrollToBottom}
+                        >
                             Kontakt
                         </Link>
                     </div>

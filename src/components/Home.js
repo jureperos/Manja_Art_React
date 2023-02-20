@@ -5,7 +5,7 @@ import './Home.css'
 
 function Home () {
     return (
-        <div>
+        <div className='home'>
             <div className='intro'>
                 <img src= { geOdzadje } alt="" className={`face-img image-border`}/>
                 <p className="intro-text">Sem Manja Tišler, varstvena biologinja, ki ji umetnost predstavlja ključen del karierne poti. Rada delam z različnimi

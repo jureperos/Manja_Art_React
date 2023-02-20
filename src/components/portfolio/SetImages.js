@@ -1,18 +1,22 @@
-import RastlineArr from "./RaslineObj";
-import ZivaliArr from "./ZivaliObj";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import RastlineArr from './RaslineArr';
+import ZivaliArr from './ZivaliArr';
+import PortretiArr from './PortretiArr';
+import LinorezArr from  './LinorezArr';
+import OstaloArr from './OstaloArr';
+import NaprodajArr from './NaprodajArr';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './SetImages.css';
 import { useState } from 'react';
-import { useLocation } from "react-router-dom";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import Captions from "yet-another-react-lightbox/plugins/captions";
-import "yet-another-react-lightbox/plugins/captions.css";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import "yet-another-react-lightbox/styles.css";
+import { useLocation } from 'react-router-dom';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
+import Captions from 'yet-another-react-lightbox/plugins/captions';
+import 'yet-another-react-lightbox/plugins/captions.css';
+import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails';
+import 'yet-another-react-lightbox/plugins/thumbnails.css';
+import Zoom from 'yet-another-react-lightbox/plugins/zoom';
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 
 
 function SetImages () {
@@ -22,6 +26,7 @@ function SetImages () {
     const path = location.pathname;
     let imgArray = []
 
+    //matching the appropriate image array to each path
     switch(path) {
         case '/portfolio':
             imgArray = RastlineArr;
@@ -32,6 +37,20 @@ function SetImages () {
         case '/portfolio/zivali':
             imgArray = ZivaliArr;
             break;
+        case '/portfolio/portreti':
+            imgArray = PortretiArr;
+            break;
+        case '/portfolio/linorez':
+            imgArray = LinorezArr;
+            break;
+        case '/portfolio/ostalo':
+            imgArray = OstaloArr;
+            break;
+        case '/naprodaj':
+            imgArray = NaprodajArr
+            break;
+        default:
+            console.log('path ne obstaja')
     }
 
     function openLightbox() {
@@ -42,6 +61,7 @@ function SetImages () {
                     src: image.src,
                     title: image.title,
                     description: image.description,
+                    padding: image.padding
                 };
             });
 
@@ -52,9 +72,13 @@ function SetImages () {
                         close={() => setlBoxOpen(false)}
                         index= {currIndex}
                         slides={slides}
-                        plugins={[Captions, Thumbnails, Zoom]}
+                        carousel={slides.padding}
+                        plugins={[Captions, Thumbnails, Zoom, Fullscreen]}
                         thumbnails={{
                             
+                        }}
+                        zoom={{
+                            maxZoomPixelRatio: 3
                         }}
                     />
                 </>
@@ -65,25 +89,27 @@ function SetImages () {
     }
 
     return (
-        //using a map method to iterate and access the imgArray array objects
-        <div className="img-container">
+        //using a map method to iterate and access the imgArray objects
+        <div className='all-img-container'>
             {imgArray.map((image) => {
                 return (
-                    <div onClick={
+                    <div 
+                    className='img-container'
+                    onClick={
                         () => {
                             setlBoxOpen(true);
                             setcurrIndex(image.index);
                         }
                     } >
                         <LazyLoadImage 
-                            height={300}
+                            height={180}
                             alt={ 'nika zaenkrat' }
                             src={ image.src }
                             offset={ 100 }
                             effect='blur'
                         />
-                        <div className="img-text">
-                            <p>{image.title}</p>
+                        <div className='img-text'>
+                            <p> {image.title} <br/> <em>{image.sciName}</em> </p>
                         </div>
                     </div>
                 )
