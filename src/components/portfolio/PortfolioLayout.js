@@ -8,19 +8,16 @@ import {
 import {BiPaintRoll} from 'react-icons/bi'
 import {IoMdImages} from 'react-icons/io'
 import { IconContext } from "react-icons"
-import {
-    useRef,
-    useEffect
-} from 'react'
+import { useRef, useEffect } from 'react'
 
 
 function PortfolioLayout () {
     //First link focused on mount
-    const linkRef = useRef(null);
+    // const linkRef = useRef(null);
 
-    useEffect(() => {
-        linkRef.current.focus();
-    }, []);
+    // useEffect(() => {
+    //     linkRef.current.focus();
+    // }, []);
     
 
 
@@ -29,7 +26,6 @@ function PortfolioLayout () {
             <div className="link-ctn">
                 <Link 
                 to={'/portfolio/rastline'}
-                ref={linkRef}
                 >
                     <IconContext.Provider value={{ className: 'link-icon' }}>
                         <GiLotusFlower />
