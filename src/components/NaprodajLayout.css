@@ -1,5 +1,12 @@
-h1 {
+.naprodaj-title {
     width: max-content;
     margin: auto;
-    padding: 4rem 0;
+    padding: 2rem 0 1rem 0;
+}
+
+.naprodaj-txt {
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    text-align: justify;
 }

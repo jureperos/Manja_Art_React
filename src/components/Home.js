@@ -23,9 +23,11 @@ function Home () {
                 <p>Že od malih nog sem rada opazovala in se navduševala za naravo, ki me je obdajala. Le-ta mi daje poseben občutek miru,
                 radovednosti ter neskončnih možnosti za učenje in razumevanje sveta, ki nas obdaja. Poslušanje ptic, lovljenje žuželk in
                 bežanje pred njimi, obmetavanje z jesenskim listjem ter vonjave cvetlic pa je vedno dopolnjevalo občasno risanje in
-                čečkanje v skicirko. Za naročila me lahko kontaktirate direktno preko socialnih
-                medijev ali preko elektronskega naslova. Za ceno se zmenimo naknadno.</p>
+                čečkanje v skicirko. </p>
                 <img src={ napolju } alt="" className='napolju-img' />
+                
+
+                
             </div>
         </div>
     )

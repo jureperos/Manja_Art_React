@@ -3,8 +3,8 @@ import './Zivljenjepis.css'
 function Zivljenjepis () {
     return (
         <>
-                <h1>UMETNIŠKE IZKUŠNJE</h1>
-        <ul>
+                <h1 className='cv-title'>UMETNIŠKE IZKUŠNJE</h1>
+        <ul className='cv-list'>
             <li>2022: Naročilo Krajinskega parka Goričko akvarelnih ilustracij gozdnih vrst ptic za opremljanje informativnih tabel</li>
 
             <li>2022: Ilustracija orjaške črepahe (<i>Chelonia mydas</i>), ki je objavljena v znanstvenem članku Apparent increasing importance
@@ -23,8 +23,8 @@ function Zivljenjepis () {
             <li>2017: Umetniška akvarelna razstava “Življenjski cikel ilirske perunike”, v sklopu moje zaključne naloge</li>
         </ul>
 
-        <h1>AKADEMSKE IZKUŠNJE</h1>
-        <ul>
+        <h1 className='cv-title'>AKADEMSKE IZKUŠNJE</h1>
+        <ul className='cv-list'>
             <li>2022: Objava znanstvenega članka Diversity and Typology of Land-Use Explain the Occurrence of Alien Plants in a
             Protected Area (Glasnović et. al 2022)</li>
 
@@ -44,8 +44,8 @@ function Zivljenjepis () {
             <li>2017: Diplomirana varstvena biologinja</li>
         </ul>
 
-        <h1>OSTALE IZKUŠNJE</h1>
-        <ul>
+        <h1 className='cv-title'>OSTALE IZKUŠNJE</h1>
+        <ul className='cv-list'>
             <li>Osnovno znanje v programih Adobe Photoshop, Adobe Indesign in Adobe Illustrator</li>
 
             <li>Osnovno znanje programa ArcGIS in QGIS</li>

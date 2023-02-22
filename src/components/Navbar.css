@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 10fr;
     justify-items: end;
     justify-content: left;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
     background-color: rgb(21, 20, 20);

@@ -28,6 +28,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    padding-top: 3rem;
 }
 
 .phrase h1 {
@@ -39,15 +40,16 @@
 .more-intro {
     text-align: justify;
     padding: 0 3rem;
-    padding-top: 2rem;
+    padding-top: 5rem;
 }
 
 .napolju-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    padding: 1rem 0 2rem 0;
+    width: 80%;
+    border-radius: 130px;
+    padding: 1rem 0;
 }
 
 @media only screen and (min-width: 650px) {
@@ -74,20 +76,19 @@
         padding: 0 6rem;
     }
 
-        .more-intro {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            margin-bottom: 10%;
-            align-items: center;
-        }
-    
-        .more-intro p {
-            padding: 3rem 10%;
-        }
-    
-        .napolju-img {
-            height: 400px;
-            width: auto;
-            
-        }
+    .more-intro {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        margin-bottom: 10%;
+        align-items: center;
+    }
+
+    .more-intro p {
+        padding: 3rem 5%;
+    }
+
+    .napolju-img {
+        height: 350px;
+        width: auto;
+    }
 }

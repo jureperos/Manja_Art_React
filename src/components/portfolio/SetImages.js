@@ -109,7 +109,10 @@ function SetImages () {
                             effect='blur'
                         />
                         <div className='img-text'>
-                            <p> {image.title} <br/> <em>{image.sciName}</em> </p>
+                            <p className='img-descr top-descr'> {image.title} <br/> <em>{image.sciName}</em> </p>
+                            <p className='img-descr'> {image.medium} </p>
+                            <p className='img-descr'> {image.dimensions} </p>
+                            <p className='img-descr img-price'> {image.price} </p>
                         </div>
                     </div>
                 )
