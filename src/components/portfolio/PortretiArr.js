@@ -7,21 +7,21 @@ const PortretiArr = [
     },
     {
         index: 1,
+        src: require('./assets/portreti/Portret_Matic&Mitja.jpg'),
+        title: 'Portret brata',
+        description: 'Portret brata. Medij suhi pasteli.'
+    },
+        {
+        index: 2,
         src: require('./assets/portreti/dekle_z_uhanom.jpg'),
         title: 'Dekle z bisernim uhanom',
         description: 'Reprodukcija slike Dekle z bisernim uhanom (slikar Johannes Vermeer). Medij suhi pasteli.'
     },
         {
-        index: 2,
+        index: 3,
         src: require('./assets/portreti/lisica.jpg'),
         title: 'Navadna lisica',
         description: 'Portret navadne lisice. Medij suhi pasteli. Referenčna fotografija Unsplash.com (Yuriy Chemerys)'
-    },
-        {
-        index: 3,
-        src: require('./assets/portreti/Portret_Matic&Mitja.jpg'),
-        title: 'Portret brata',
-        description: 'Portret brata. Medij suhi pasteli.'
     },
         {
         index: 4,

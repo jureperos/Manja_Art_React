@@ -22,32 +22,45 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 function SetImages () {
     const [lBoxOpen, setlBoxOpen] = useState(false)
     const [currIndex, setcurrIndex] = useState(0);
+    // const [frames, setframes] = useState(null);
     const location = useLocation();
     const path = location.pathname;
     let imgArray = []
+    let frameNum = ''
+    let height = null
 
     //matching the appropriate image array to each path
     switch(path) {
         case '/portfolio':
             imgArray = RastlineArr;
+            height = 220
             break;
         case '/portfolio/rastline':
             imgArray = RastlineArr;
+            height = 220
             break;
         case '/portfolio/zivali':
             imgArray = ZivaliArr;
+            console.log('do se pride')
+            frameNum = 'frame-num'
+            height = 200
             break;
         case '/portfolio/portreti':
             imgArray = PortretiArr;
+            height = 200
             break;
         case '/portfolio/linorez':
             imgArray = LinorezArr;
+            height = 200
             break;
         case '/portfolio/ostalo':
             imgArray = OstaloArr;
+            height = 200
+            frameNum = 'frame-num'
             break;
         case '/naprodaj':
             imgArray = NaprodajArr
+            height = 200
             break;
         default:
             console.log('path ne obstaja')
@@ -90,7 +103,7 @@ function SetImages () {
 
     return (
         //using a map method to iterate and access the imgArray objects
-        <div className='all-img-container'>
+        <div className={`all-img-container ${frameNum}`}>
             {imgArray.map((image) => {
                 return (
                     <div 
@@ -102,7 +115,7 @@ function SetImages () {
                         }
                     } >
                         <LazyLoadImage 
-                            height={180}
+                            height={height}
                             alt={ 'nika zaenkrat' }
                             src={ image.src }
                             offset={ 100 }
