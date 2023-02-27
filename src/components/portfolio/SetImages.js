@@ -22,7 +22,6 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 function SetImages () {
     const [lBoxOpen, setlBoxOpen] = useState(false)
     const [currIndex, setcurrIndex] = useState(0);
-    // const [frames, setframes] = useState(null);
     const location = useLocation();
     const path = location.pathname;
     let imgArray = []
@@ -41,7 +40,6 @@ function SetImages () {
             break;
         case '/portfolio/zivali':
             imgArray = ZivaliArr;
-            console.log('do se pride')
             frameNum = 'frame-num'
             height = 200
             break;
@@ -72,7 +70,6 @@ function SetImages () {
             const slides = imgArray.map((image) => {
                 return { 
                     src: image.src,
-                    // title: image.title,
                     description: image.description,
                     padding: image.padding
                 };

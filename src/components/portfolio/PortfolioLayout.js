@@ -12,15 +12,7 @@ import { useRef, useEffect } from 'react'
 
 
 function PortfolioLayout () {
-    //First link focused on mount
-    // const linkRef = useRef(null);
-
-    // useEffect(() => {
-    //     linkRef.current.focus();
-    // }, []);
     
-
-
     return (
         <>
             <div className="link-ctn">

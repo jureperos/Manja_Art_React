@@ -16,9 +16,9 @@ function Zivljenjepis () {
             <li>2022: Naročilo občine Ankaran akvarelnih ilustracij rastlinskih in živalskih vrst, za opremljanje informativnih tabel na
             območju naravne vrednote obrežno močvirje pri Sv. Nikolaju (sredozemski slani travnik)</li>
 
-            <li>2022: Objava v glasilu Lovec</li>
+            <li>2022: Objava v glasilu <a href='https://clan.lovska-zveza.si/userfiles/Lovec/pdf/Lovec-2021-12.pdf' target={'_blank'}>Lovec</a></li>
 
-            <li>2021: Objava v CMK magazinu</li>
+            <li>2021: Objava v <a href='https://issuu.com/centermladihkoper/docs/cmk_55-2' target={'_blank'}>CMK magazinu</a></li>
 
             <li>2017: Umetniška akvarelna razstava “Življenjski cikel ilirske perunike”, v sklopu moje zaključne naloge</li>
         </ul>
