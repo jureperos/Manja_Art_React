@@ -30,7 +30,7 @@ const OstaloArr = [
         description: 'Urbano skiciranje v Vipavi. Medij ink in akvarel.'
     },
         {
-        index: 4,
+        index: 5,
         src: require('./assets/Ostalo/zvezdna_noc.jpg'),
         title: 'Zvezdna noč',
         description: 'Reprodukcija slike Zvezdna noč (slikar Vincent van Gogh). Medij akrilne barve.'

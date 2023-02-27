@@ -4,7 +4,7 @@ const NaprodajArr = [
         src: require('./assets/rastline/2 Iris illyrica.jpg'),
         title: 'Ilirska perunika (Iris illyrica) 2017',
         description: 'Neodprti cvetovi ilirske perunike.',
-        medium: 'akvarel',
+        medium: 'Akvarel',
         dimensions: '17.7 x 25.8 cm',
         price: '200 €',
         
@@ -34,7 +34,7 @@ const NaprodajArr = [
         src: require('./assets/zivali/inachis_io.png'),
         title: 'Dnevni pavlinček (Aglais io) 2022',
         description: 'Dnevni pavlinček',
-        medium: 'Suhi pastel',
+        medium: 'Suhi pasteli',
         dimensions: '18 x 13',
         price: '120 €',
         
@@ -44,7 +44,7 @@ const NaprodajArr = [
         src: require('./assets/portreti/lisica.jpg'),
         title: 'Navadna lisica (Vulpes vulpes) 2021',
         description: 'Portret navadne lisice. Referenčna fotografija Unsplash.com (Yuriy Chemerys)',
-        medium: 'Suhi pastel',
+        medium: 'Suhi pasteli',
         dimensions: '24 x 30',
         price: '450 €',
         

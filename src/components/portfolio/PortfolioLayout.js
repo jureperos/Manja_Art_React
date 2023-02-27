@@ -30,14 +30,14 @@ function PortfolioLayout () {
                     <IconContext.Provider value={{ className: 'link-icon' }}>
                         <GiLotusFlower />
                     </IconContext.Provider>
-                    <p>Rastline</p>
+                    <p>Botanične ilustracije</p>
                 </Link>
 
                 <Link to={'/portfolio/zivali'}>
                     <IconContext.Provider value={{ className: 'link-icon' }}>
                         <GiFox />
                     </IconContext.Provider>
-                    <p>Živali</p>
+                    <p>Živalske ilustracije</p>
 
                 </Link>
 
