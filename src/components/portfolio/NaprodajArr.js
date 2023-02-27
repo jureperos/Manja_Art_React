@@ -2,7 +2,8 @@ const NaprodajArr = [
     {
         index: 0,
         src: require('./assets/rastline/2 Iris illyrica.jpg'),
-        title: 'Ilirska perunika (Iris illyrica) 2017',
+        title: 'Ilirska perunika 2017',
+        sciName: 'Iris illyrica',
         description: 'Neodprti cvetovi ilirske perunike.',
         medium: 'Akvarel',
         dimensions: '17.7 x 25.8 cm',
@@ -12,7 +13,8 @@ const NaprodajArr = [
         {
         index: 1,
         src: require('./assets/rastline/Olea_europaea.jpg'),
-        title: 'Oljka (Olea europaea) 2021',
+        title: 'Oljka 2021',
+        sciName: 'Olea europaea',
         description: 'Oljka',
         medium: 'Suhi pasteli',
         dimensions: '15 x 20cm',
@@ -22,7 +24,8 @@ const NaprodajArr = [
         {
         index: 2,
         src: require('./assets/linorez/lino.jpg'),
-        title: 'Navadna bodika (Ilex aquifolium), 2022',
+        title: 'Navadna bodika 2022',
+        sciName: 'Ilex aquifolium',
         description: 'Navadna bodika. Print na japonskem papirju. Printi se razlikujejo',
         medium: 'Linorez + akrilni markerji (na voljo kot print)',
         dimensions: '9 x 11 cm',
@@ -32,7 +35,8 @@ const NaprodajArr = [
         {
         index: 3,
         src: require('./assets/zivali/inachis_io.png'),
-        title: 'Dnevni pavlinček (Aglais io) 2022',
+        title: 'Dnevni pavlinček 2022',
+        sciName: 'Aglais io',
         description: 'Dnevni pavlinček',
         medium: 'Suhi pasteli',
         dimensions: '18 x 13',
@@ -42,7 +46,8 @@ const NaprodajArr = [
         {
         index: 4,
         src: require('./assets/portreti/lisica.jpg'),
-        title: 'Navadna lisica (Vulpes vulpes) 2021',
+        title: 'Navadna lisica 2021',
+        sciName: 'Vulpes vulpes',
         description: 'Portret navadne lisice. Referenčna fotografija Unsplash.com (Yuriy Chemerys)',
         medium: 'Suhi pasteli',
         dimensions: '24 x 30',
