@@ -72,7 +72,7 @@ function SetImages () {
             const slides = imgArray.map((image) => {
                 return { 
                     src: image.src,
-                    title: image.title,
+                    // title: image.title,
                     description: image.description,
                     padding: image.padding
                 };
