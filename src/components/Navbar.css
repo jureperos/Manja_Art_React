@@ -155,3 +155,35 @@
         height: 320px;
     }
 }
+
+@media only screen and (min-width: 850px) {
+    .nav-list.bigger-width {
+        display: block;
+        padding-left: 1rem;
+    }
+
+    .menu-icon,
+    .menu-button {
+        display: none;
+    }
+
+    #big-width-links {
+        position: inherit;
+        border-bottom: none;
+        margin: 0;
+        padding: 0.5rem;
+        border: solid 1px;
+        border-radius: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .nav-list a:hover {
+
+    }
+}

@@ -39,34 +39,39 @@ function Navbar() {
                             <GoThreeBars />
                         </IconContext.Provider>
                     </button>
-                    <div className={`nav-list ${menuOpen ? 'open' : 'closed'}`}>
+                    <div className={`nav-list ${menuOpen ? 'open' : 'closed'} bigger-width`}>
 
                         <Link 
-                        className={`menu-item first`} 
+                        className={`menu-item first`}
+                        id='big-width-links'
                         to={'/'}>
                             Domov
                         </Link>
 
                         <Link 
-                        className={`menu-item second`} 
+                        className={`menu-item second`}
+                        id='big-width-links'
                         to={'/portfolio'}>
                             Portfelj
                         </Link>
 
                         <Link 
-                        className={`menu-item third`} 
+                        className={`menu-item third`}
+                        id='big-width-links'
                         to={'/naprodaj'}>
                             Naprodaj
                         </Link>
 
                         <Link 
-                        className={`menu-item fourth`} 
+                        className={`menu-item fourth`}
+                        id='big-width-links'
                         to={'/zivljenjepis'}> 
                             Življenjepis
                         </Link>
 
                         <Link 
-                        className={`menu-item fifth`} 
+                        className={`menu-item fifth`}
+                        id='big-width-links'
                         to={'#'}
                         onClick={scrollToBottom}
                         >
