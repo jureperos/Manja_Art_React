@@ -68,6 +68,13 @@ function Navbar() {
                         to={'/zivljenjepis'}> 
                             Življenjepis
                         </Link>
+                        
+                        <Link 
+                        className={`menu-item fourth`}
+                        id='big-width-links'
+                        to={'/blog'}> 
+                            Blog
+                        </Link>
 
                         <Link 
                         className={`menu-item fifth`}

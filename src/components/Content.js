@@ -8,6 +8,7 @@ import PortfolioLayout from "./portfolio/PortfolioLayout";
 import Zivljenjepis from "./Zivljenjepis";
 import NaprodajLayout from "./NaprodajLayout";
 import NotFound from "./NotFound";
+import Blog from "./blog/Blog";
 
 
 function Content () {
@@ -30,10 +31,11 @@ function Content () {
                         <Route index element={ <SetImages /> } />
                     </Route>
                     <Route path="/zivljenjepis" element={ <Zivljenjepis /> } />
+                    <Route path="/blog" element={ <Blog /> } />
                     <Route path="/*" element={ <NotFound /> } />
                 </Routes>
             </div>
-                <Footer />
+            <Footer />
         </div>
     )
 }
