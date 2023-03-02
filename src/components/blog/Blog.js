@@ -1,9 +1,11 @@
-import './Blog.css'
-import BlPost1 from './blogPosts/BlPost1'
+import BlPost1 from './blogLinks/BlogLinks'
 
 function Blog() {
     return (
         <>
+            <img></img>
+            <p></p>
+
             <BlPost1 />
         </>
     )
