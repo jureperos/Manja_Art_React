@@ -69,8 +69,10 @@ function Navbar() {
                             Življenjepis
                         </Link>
                         
+                        {/* added one link; fix the styling */}
+
                         <Link 
-                        className={`menu-item fourth`}
+                        className={`menu-item fifth`}
                         id='big-width-links'
                         to={'/blog'}> 
                             Blog

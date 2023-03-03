@@ -99,7 +99,7 @@ function SetImages () {
     }
 
     return (
-        //Using map method to dinamicali populate images based on input array
+        //Using map method to dinamicaly populate images based on input array
         <div className={`all-img-container ${frameNum}`}>
             {imgArray.map((image) => {
                 return (

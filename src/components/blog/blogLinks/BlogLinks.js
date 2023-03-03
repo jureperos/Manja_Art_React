@@ -6,12 +6,12 @@ function BlogLinks(props) {
     return(
         <>
             <Link to={`/blog/${props.blogPath}`}>
-                <img src=''></img>
+                <img src=''></img>  {/*uredi path*/}
                 <div>
                     <h1> {props.title} </h1>
                     <span> {props.date} </span>
                 </div>
-                <p> {props.text} </p>
+                <p> {props.introTxt} </p>
             </Link>
         </>
     )

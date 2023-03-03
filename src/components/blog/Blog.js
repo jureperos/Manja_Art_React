@@ -9,13 +9,14 @@ function Blog() {
                 img={element.img}
                 title={element.title}
                 date={element.date}
-                text={element.text}
+                introTxt={element.introText}
             />
         )
     })
     return (
         <>
-            <p></p>
+            <h1> Blog </h1>
+            <p>Dobrodošli na mojem blogu. Tu boste lahko prebirali različne tematike o umetniških materialih, barvni teoriji, “step by step tutorial” in še veliko več. Upam, da vam bodo informacije koristile in da se boste tudi kdaj sprobali v risanju. Trenutno je blog še v zametkih, a upam da se bo sčasoma povečalo število objav. Uživajte v branju!</p>
             {blogLinkElements}
         </>
     )
