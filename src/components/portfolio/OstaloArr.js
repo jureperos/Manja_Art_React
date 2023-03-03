@@ -35,6 +35,12 @@ const OstaloArr = [
         title: 'Zvezdna noč',
         description: 'Reprodukcija slike Zvezdna noč (slikar Vincent van Gogh). Medij akrilne barve.'
     },
+            {
+        index: 6,
+        src: require('./assets/Ostalo/6_na_dan.png'),
+        title: '6 na dan',
+        description: 'Medij gvaš'
+    },
 ]
 
 

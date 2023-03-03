@@ -61,8 +61,16 @@ const NaprodajArr = [
         description: 'Reprodukcija slike Zvezdna noč (slikar Vincent van Gogh). Medij akrilne barve.',
         medium: 'Akril',
         dimensions: '24 x 18',
-        price: '100 €',
+        price: '100 €', 
         
+    },
+        {
+        index: 6,
+        src: require('./assets/Ostalo/6_na_dan.png'),
+        title: '6 na dan 2023',
+        description: 'Na voljo kot print',
+        medium: 'Gvaš',
+        price: '10 €'
     },
 ]
 
