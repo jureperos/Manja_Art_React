@@ -70,7 +70,7 @@ const NaprodajArr = [
         title: '6 na dan 2023',
         description: 'Na voljo kot print',
         medium: 'Gvaš',
-        price: '10 €'
+        price: ''
     },
 ]
 
