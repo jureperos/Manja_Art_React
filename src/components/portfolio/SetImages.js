@@ -1,14 +1,8 @@
-import RastlineArr from './RaslineArr';
-import ZivaliArr from './ZivaliArr';
-import PortretiArr from './PortretiArr';
-import LinorezArr from  './LinorezArr';
-import OstaloArr from './OstaloArr';
-import NaprodajArr from './NaprodajArr';
+
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './SetImages.css';
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import Captions from 'yet-another-react-lightbox/plugins/captions';
@@ -19,56 +13,14 @@ import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 
 
-function SetImages () {
+function SetImages (props) {
     const [lBoxOpen, setlBoxOpen] = useState(false)
     const [currIndex, setcurrIndex] = useState(0);
-    const location = useLocation();
-    const path = location.pathname;
-    let imgArray = []
-    let frameNum = ''
-    let height = null
-
-    //Will try to change this with props
-    //matching the appropriate image array to each path
-    switch(path) {
-        case '/portfolio':
-            imgArray = RastlineArr;
-            height = 220
-            break;
-        case '/portfolio/rastline':
-            imgArray = RastlineArr;
-            height = 220
-            break;
-        case '/portfolio/zivali':
-            imgArray = ZivaliArr;
-            frameNum = 'frame-num'
-            height = 200
-            break;
-        case '/portfolio/portreti':
-            imgArray = PortretiArr;
-            height = 200
-            break;
-        case '/portfolio/linorez':
-            imgArray = LinorezArr;
-            height = 200
-            break;
-        case '/portfolio/ostalo':
-            imgArray = OstaloArr;
-            height = 200
-            frameNum = 'frame-num'
-            break;
-        case '/naprodaj':
-            imgArray = NaprodajArr
-            height = 200
-            break;
-        default:
-            console.log('path ne obstaja')
-    }
 
     function openLightbox() {
         if (lBoxOpen === true) {
             //iterating through imgArray to populate lightbox slides
-            const slides = imgArray.map((image) => {
+            const slides = props.imgArr.map((image) => {
                 return { 
                     src: image.src,
                     description: image.description,
@@ -101,8 +53,8 @@ function SetImages () {
 
     return (
         //using a map method to iterate and access the imgArray objects
-        <div className={`all-img-container ${frameNum}`}>
-            {imgArray.map((image) => {
+        <div className={`all-img-container ${props.frameNum}`}>
+            {props.imgArr.map((image) => {
                 return (
                     <div 
                     className='img-container'
@@ -113,7 +65,7 @@ function SetImages () {
                         }
                     } >
                         <LazyLoadImage 
-                            height={height}
+                            height={props.height}
                             alt={ 'nika zaenkrat' }
                             src={ image.src }
                             offset={ 100 }
