@@ -28,6 +28,7 @@ function SetImages () {
     let frameNum = ''
     let height = null
 
+    //Will try to change this with props
     //matching the appropriate image array to each path
     switch(path) {
         case '/portfolio':
