@@ -1,6 +1,6 @@
 .background {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.7fr 1fr;
     background: linear-gradient(to right, #A49E9E 10%, #ededed 10% 100%);
     height: 100vh;
     padding: 5rem 5% 0 15%;

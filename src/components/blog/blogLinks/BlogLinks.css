@@ -1,0 +1,8 @@
+.blog-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.links-intro-txt {
+    grid-column: 1 / -1;
+}

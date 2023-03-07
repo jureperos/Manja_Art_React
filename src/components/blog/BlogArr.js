@@ -5,16 +5,16 @@ import introTxt from "./introTxt"
 export default [
     {
         blogPath: '',
-        img: '',
-        title: '',
-        date: '',
+        img: require('./blog_1/blog1Img.png'),
+        title: 'Barve in pigmenti',
+        date: 'Sobota, 4.3.2023',
         introText: introTxt.text1,
     },
         {
         blogPath: '',
-        img: '',
-        title: '',
-        date: '',
-        text: '',
+        img: require('./blog_1/blog1Img.png'),
+        title: 'Barve in pigmenti',
+        date: 'Sobota, 4.3.2023',
+        introText: introTxt.text1,
     },
 ]

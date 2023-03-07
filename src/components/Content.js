@@ -31,7 +31,9 @@ function Content () {
                         <Route index element={ <SetImages /> } />
                     </Route>
                     <Route path="/zivljenjepis" element={ <Zivljenjepis /> } />
-                    <Route path="/blog" element={ <Blog /> } />
+                    <Route path="/blog" element={ <Blog /> }>
+                        <Route path=":id" />
+                    </Route>
                     <Route path="/*" element={ <NotFound /> } />
                 </Routes>
             </div>
