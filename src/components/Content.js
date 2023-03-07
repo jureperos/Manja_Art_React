@@ -8,7 +8,16 @@ import PortfolioLayout from "./portfolio/PortfolioLayout";
 import Zivljenjepis from "./Zivljenjepis";
 import NaprodajLayout from "./NaprodajLayout";
 import NotFound from "./NotFound";
+<<<<<<< HEAD
 import Blog from "./blog/Blog";
+=======
+import RastlineArr from './portfolio/RaslineArr';
+import ZivaliArr from './portfolio/ZivaliArr';
+import PortretiArr from './portfolio/PortretiArr';
+import LinorezArr from  './portfolio/LinorezArr';
+import OstaloArr from './portfolio/OstaloArr';
+import NaprodajArr from './portfolio/NaprodajArr';
+>>>>>>> origin/main
 
 
 function Content () {
@@ -20,15 +29,39 @@ function Content () {
                 <Routes>
                     <Route path='/' element={ <Home/> } />
                     <Route path='/portfolio' element={ <PortfolioLayout /> } >
-                        <Route index element={ <SetImages/> }  />
-                        <Route path="rastline" element={ <SetImages /> } />
-                        <Route path="zivali" element={ <SetImages /> } />
-                        <Route path="portreti" element={ <SetImages /> } />
-                        <Route path="linorez" element={ <SetImages /> } />
-                        <Route path="ostalo" element={ <SetImages /> } />
+                        <Route index element={ <SetImages
+                        imgArr={RastlineArr}
+                        height={220}
+                        /> }  />
+                        <Route path="rastline" element={ <SetImages 
+                        imgArr={RastlineArr}
+                        height={220}
+                        /> } />
+                        <Route path="zivali" element={ <SetImages 
+                        imgArr={ZivaliArr}
+                        height={200}
+                        frameNum={"frame-num"}
+                        /> } />
+                        <Route path="portreti" element={ <SetImages 
+                        imgArr={PortretiArr}
+                        height={200}
+                        /> } />
+                        <Route path="linorez" element={ <SetImages 
+                        imgArr={LinorezArr}
+                        height={200}
+                        /> } />
+                        <Route path="ostalo" element={ <SetImages 
+                        imgArr={OstaloArr}
+                        height={200}
+                        frameNum={"frame-num"}
+                        /> } />
                     </Route>
                     <Route path="/naprodaj" element={ <NaprodajLayout /> }>
-                        <Route index element={ <SetImages /> } />
+                        <Route index element={ <SetImages 
+                        imgArr={NaprodajArr}
+                        height={200}
+                        frameNum={"frame-num"}
+                        /> } />
                     </Route>
                     <Route path="/zivljenjepis" element={ <Zivljenjepis /> } />
                     <Route path="/blog" element={ <Blog /> }>
