@@ -1,5 +1,7 @@
 import BlogLinks from './blogLinks/BlogLinks'
 import BlogArr from './BlogArr'
+import './Blog.css';
+import blogImg from './blog_intro.png';
 
 function Blog() {
     const blogLinkElements = BlogArr.map(element => {
@@ -15,9 +17,14 @@ function Blog() {
     })
     return (
         <>
-            <h1> Blog </h1>
-            <p>Dobrodošli na mojem blogu. Tu boste lahko prebirali različne tematike o umetniških materialih, barvni teoriji, “step by step tutorial” in še veliko več. Upam, da vam bodo informacije koristile in da se boste tudi kdaj sprobali v risanju. Trenutno je blog še v zametkih, a upam da se bo sčasoma povečalo število objav. Uživajte v branju!</p>
-            {blogLinkElements}
+            <div className='background'>
+                <img src={ blogImg } alt="" className="blog-intro-img" />
+                <div>
+                    <h1 className='blog-title'> Blog </h1>
+                    <p className='blog-descr'>Dobrodošli na mojem blogu. Tu boste lahko prebirali različne tematike o umetniških materialih, barvni teoriji, “step by step tutorial” in še veliko več. Upam, da vam bodo informacije koristile in da se boste tudi kdaj sprobali v risanju. Trenutno je blog še v zametkih, a upam da se bo sčasoma povečalo število objav. Uživajte v branju!</p>
+                </div>
+                <div className='blog-links'>{blogLinkElements}</div>
+            </div>
         </>
     )
 }
