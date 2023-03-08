@@ -9,7 +9,6 @@ import Zivljenjepis from "./Zivljenjepis";
 import NaprodajLayout from "./NaprodajLayout";
 import NotFound from "./NotFound";
 import Blog from "./blog/Blog";
-import Blog_1 from "./blog/blog_1/Blog_1";
 
 import RastlineArr from './portfolio/RaslineArr';
 import ZivaliArr from './portfolio/ZivaliArr';
@@ -17,6 +16,7 @@ import PortretiArr from './portfolio/PortretiArr';
 import LinorezArr from  './portfolio/LinorezArr';
 import OstaloArr from './portfolio/OstaloArr';
 import NaprodajArr from './portfolio/NaprodajArr';
+import BlogRoute from "./blog/BlogRoute";
 
 
 function Content () {
@@ -96,7 +96,7 @@ function Content () {
                     </Route>
                     <Route path="/zivljenjepis" element={ <Zivljenjepis /> } />
                     <Route path="/blog" element={ <Blog /> } />
-                    <Route path="/blog/:id" element={ <Blog_1 /> }/>
+                    <Route path="/blog/:id" element={ <BlogRoute /> }/>
                     <Route path="/*" element={ <NotFound /> } />
                 </Routes>
             </div>

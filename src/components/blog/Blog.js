@@ -7,7 +7,7 @@ function Blog() {
     const blogLinkElements = BlogArr.map(element => {
         return (
             <BlogLinks
-                blogPath={element.blogPath}
+                blogId={element.blogId}
                 img={element.img}
                 title={element.title}
                 date={element.date}

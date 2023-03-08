@@ -1,20 +1,23 @@
+import Blog_1 from "./blog_1/Blog_1"
 import introTxt from "./introTxt"
 
 //intro stored in another file to make the code readable
 
 export default [
     {
-        blogPath: 'blog1',
+        blogId: 'blog1',
         img: require('./blog_1/blog1Img.png'),
         title: 'Barve in pigmenti',
         date: 'Sobota, 4.3.2023',
         introText: introTxt.text1,
+        component: <Blog_1 />
     },
         {
-        blogPath: 'opica',
+        blogId: 'opica',
         img: require('./blog_1/blog1Img.png'),
         title: 'Barve in pigmenti',
         date: 'Sobota, 4.3.2023',
         introText: introTxt.text1,
+        component: <h1>paprika</h1>
     },
 ]

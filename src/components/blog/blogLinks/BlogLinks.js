@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function BlogLinks(props) {
 
     return(
-            <Link to={`/blog/${props.blogPath}`} className='blog-links'>
+            <Link to={`/blog/${props.blogId}`} className='blog-links'>
                 <img src={props.img}></img>
                 <div>
                     <h1> {props.title} </h1>
