@@ -4,14 +4,14 @@ import introTxt from "./introTxt"
 
 export default [
     {
-        blogPath: '',
+        blogPath: 'blog1',
         img: require('./blog_1/blog1Img.png'),
         title: 'Barve in pigmenti',
         date: 'Sobota, 4.3.2023',
         introText: introTxt.text1,
     },
         {
-        blogPath: '',
+        blogPath: 'opica',
         img: require('./blog_1/blog1Img.png'),
         title: 'Barve in pigmenti',
         date: 'Sobota, 4.3.2023',
