@@ -28,39 +28,71 @@ function Content () {
                 <Routes>
                     <Route path='/' element={ <Home/> } />
                     <Route path='/portfolio' element={ <PortfolioLayout /> } >
-                        <Route index element={ <SetImages
-                        imgArr={RastlineArr}
-                        height={220}
-                        /> }  />
-                        <Route path="rastline" element={ <SetImages 
-                        imgArr={RastlineArr}
-                        height={220}
-                        /> } />
-                        <Route path="zivali" element={ <SetImages 
-                        imgArr={ZivaliArr}
-                        height={200}
-                        frameNum={"frame-num"}
-                        /> } />
-                        <Route path="portreti" element={ <SetImages 
-                        imgArr={PortretiArr}
-                        height={200}
-                        /> } />
-                        <Route path="linorez" element={ <SetImages 
-                        imgArr={LinorezArr}
-                        height={200}
-                        /> } />
-                        <Route path="ostalo" element={ <SetImages 
-                        imgArr={OstaloArr}
-                        height={200}
-                        frameNum={"frame-num"}
-                        /> } />
+
+                        <Route 
+                            index element={ 
+                                <SetImages
+                                imgArr={RastlineArr}
+                                height={220}/> 
+                            } 
+                        />
+
+                        <Route 
+                            path="rastline" 
+                            element={ 
+                                <SetImages 
+                                imgArr={RastlineArr}
+                                height={220}/> 
+                            } 
+                        />
+
+                        <Route 
+                            path="zivali" 
+                            element={ 
+                                <SetImages 
+                                imgArr={ZivaliArr}
+                                height={200}
+                                frameNum={"frame-num"} /> 
+                            } 
+                        />
+
+                        <Route 
+                            path="portreti" 
+                            element={ 
+                                <SetImages 
+                                imgArr={PortretiArr}
+                                height={200}/> 
+                            } 
+                        />
+
+                        <Route 
+                            path="linorez" 
+                            element={ 
+                                <SetImages 
+                                imgArr={LinorezArr}
+                                height={200}/> 
+                            } 
+                        />
+
+                        <Route 
+                            path="ostalo" 
+                            element={ 
+                                <SetImages 
+                                imgArr={OstaloArr}
+                                height={200}
+                                frameNum={"frame-num"}/> 
+                            } 
+                        />
                     </Route>
                     <Route path="/naprodaj" element={ <NaprodajLayout /> }>
-                        <Route index element={ <SetImages 
-                        imgArr={NaprodajArr}
-                        height={200}
-                        frameNum={"frame-num"}
-                        /> } />
+                        <Route 
+                            index element={ 
+                                <SetImages 
+                                imgArr={NaprodajArr}
+                                height={200}
+                                frameNum={"frame-num"}/> 
+                            }
+                        />
                     </Route>
                     <Route path="/zivljenjepis" element={ <Zivljenjepis /> } />
                     <Route path="/blog" element={ <Blog /> } />

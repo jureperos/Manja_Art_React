@@ -120,7 +120,7 @@ const RastlineArr = [
     },
         {
         index: 17,
-        src: require('./assets/rastline/Olea_europaea.jpg'),
+        src: require('./assets/rastline/Olea_europaea.png'),
         title: 'Oljka',
         sciName: 'Olea europaea',
         description: 'Oljka. Medij suhi pasteli.'
