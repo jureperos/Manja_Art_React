@@ -12,7 +12,7 @@ const NaprodajArr = [
     },        
         {
         index: 1,
-        src: require('./assets/rastline/Olea_europaea.jpg'),
+        src: require('./assets/rastline/Olea_europaea.png'),
         title: 'Oljka 2021',
         sciName: 'Olea europaea',
         description: 'Oljka',
@@ -56,7 +56,7 @@ const NaprodajArr = [
     },
         {
         index: 5,
-        src: require('./assets/Ostalo/zvezdna_noc.jpg'),
+        src: require('./assets/Ostalo/zvezdna_noc.png'),
         title: 'Zvezdna noč 2020',
         description: 'Reprodukcija slike Zvezdna noč (slikar Vincent van Gogh). Medij akrilne barve.',
         medium: 'Akril',
