@@ -1,8 +1,31 @@
 .blog-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: #A49E9E;
+    text-decoration: none;
+    color: #2E2424;
+    margin: 4rem 0;
+    border-radius: 8px;
+}
+
+.blog-link-image {
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.blog-info-ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 4rem;
+    justify-content: center;
+}
+
+.blog-date {
+    justify-self: end;
 }
 
 .links-intro-txt {
     grid-column: 1 / -1;
+    padding: 0 2rem 1rem 2rem;
 }
