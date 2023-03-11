@@ -4,28 +4,39 @@
     background-color: #A49E9E;
     text-decoration: none;
     color: #2E2424;
-    margin: 4rem 0;
     border-radius: 8px;
+    width: 80%;
+    align-items: center;
+    margin: 2rem auto;
 }
 
 .blog-link-image {
-    justify-content: center;
     padding: 1rem 2rem;
+    width: 65%;
 }
 
-.blog-info-ctn {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-right: 4rem;
-    justify-content: center;
+.blog-links h1 {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 18px;
 }
 
 .blog-date {
     justify-self: end;
+    font-size: 15px;
+    font-family: 'IM Fell English SC', serif;
 }
 
 .links-intro-txt {
     grid-column: 1 / -1;
     padding: 0 2rem 1rem 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .blog-link-image {
+        width: 180px;
+    }
+
+    .blog-links {
+        width: 470px;
+    }
 }

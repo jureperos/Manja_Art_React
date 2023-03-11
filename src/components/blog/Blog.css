@@ -1,26 +1,63 @@
-.background {
+.blog-intro {
     display: grid;
-    grid-template-columns: 0.7fr 1fr;
-    background: linear-gradient(to right, #A49E9E 10%, #ededed 10% 100%);
-    padding: 5rem 5% 0 15%;
+    grid-template-columns: 5fr 6fr;
+    padding-top: 3rem;
 }
 
 .blog-intro-img {
     justify-self: center;
+    width: 100px;
 }
 
 .blog-title {
     margin: 0;
-    padding-bottom: 2rem;
-    font-size: 50px;
+    font-size: 40px;
+    align-self: center;
+    font-weight: lighter;
+    font-family: 'IM Fell English SC', serif;
 }
 
 .blog-descr {
     text-align: justify;
-    padding-right: 2rem;
+    grid-column: 1 / -1;
+    width: 80%;
+    justify-self: center;
 }
 
-.blog-links-ctn {
-    grid-column: 1 / -1;
-    margin: 3rem 0 3rem 5rem;
+@media only screen and (min-width: 600px) {
+    .blog-intro-img {
+        width: 40%;
+        justify-self: right;
+        padding-right: 20%;
+    }
+
+    .blog-title,
+    .blog-descr {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .blog-title {
+        align-self: start;
+    }
+
+    .blog-descr{
+        margin-top: 3rem;
+        width: 80%;
+        justify-self: left;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .background{
+        background: linear-gradient(to right, #A49E9E 40px, #ededed 40px 100%);
+    }
+        
+}
+
+@media only screen and (min-width:1000px) {
+    .blog-link-elements {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }

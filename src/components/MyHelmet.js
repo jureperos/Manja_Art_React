@@ -19,6 +19,9 @@ function MyHelmet () {
                 <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
                 <link rel="manifest" href="./favicon/site.webmanifest" />
                 <meta name="theme-color" content="#ffffff"></meta>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+                <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet"></link>
             </Helmet>
         </>
     )
