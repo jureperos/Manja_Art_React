@@ -5,7 +5,7 @@ const OstaloArr = [
         title: 'Toplina jeseni',
         description: 'Toplina jeseni. Medij oljne barve na platnu.',
     },
-    {
+        {
         index: 1,
         src: require('./assets/Ostalo/Jalovec.jpg'),
         title: 'Pogled na Jalovec',
@@ -46,17 +46,20 @@ const OstaloArr = [
         src: require('./assets/Ostalo/po_dezju.jpg'),
         title: 'po dezju',
         description: 'Medij suhi pastel'
-    },        {
+    },
+        {
         index: 8,
         src: require('./assets/Ostalo/nektar_nektar.png'),
         title: 'Nektar nektar',
         description: 'Medij suhi pastel'
-    },        {
+    },        
+        {
         index: 9,
         src: require('./assets/Ostalo/cvet_med_cvetovi.png'),
         title: 'Cvet med cvetovi',
         description: 'Medij suhi pastel'
-    },        {
+    },        
+        {
         index: 10,
         src: require('./assets/Ostalo/vrata_kopra.png'),
         title: 'Vrata Kopra',

@@ -17,7 +17,7 @@ const NaprodajArr = [
         sciName: 'Olea europaea',
         description: 'Oljka',
         medium: 'Suhi pasteli',
-        dimensions: '15 x 20cm',
+        dimensions: '14.5 x 19cm',
         price: '70 €',
         
     },    
@@ -39,7 +39,7 @@ const NaprodajArr = [
         sciName: 'Aglais io',
         description: 'Dnevni pavlinček',
         medium: 'Suhi pasteli',
-        dimensions: '18 x 13',
+        dimensions: '10 x 14.5',
         price: '120 €',
         
     },
@@ -50,7 +50,7 @@ const NaprodajArr = [
         sciName: 'Vulpes vulpes',
         description: 'Portret navadne lisice. Referenčna fotografija Unsplash.com (Yuriy Chemerys)',
         medium: 'Suhi pasteli',
-        dimensions: '24 x 30',
+        dimensions: '22 x 28',
         price: '450 €',
         
     },
@@ -71,6 +71,22 @@ const NaprodajArr = [
         description: 'Na voljo kot print',
         medium: 'Gvaš',
         price: ''
+    },
+        {
+        index: 7,
+        src: require('./assets/Ostalo/vrata_kopra.png'),
+        title: 'Vrata Kopra',
+        description: 'Vrata Kopra',
+        medium: 'Suhi pastel',
+        price: '100 €'
+    },
+        {
+        index: 8,
+        src: require('./assets/Ostalo/cvet_med_cvetovi.png'),
+        title: 'Cvet med cvetovi',
+        description: 'Cvet med cvetovi',
+        medium: 'Medij suhi pastel',
+        price: '80 €'
     },
 ]
 
