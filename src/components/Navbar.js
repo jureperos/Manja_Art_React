@@ -68,8 +68,6 @@ function Navbar() {
                         to={'/zivljenjepis'}> 
                             Življenjepis
                         </Link>
-                        
-                        {/* added one link; fix the styling */}
 
                         <Link 
                         className={`menu-item fifth`}
@@ -79,7 +77,7 @@ function Navbar() {
                         </Link>
 
                         <Link 
-                        className={`menu-item fifth`}
+                        className={`menu-item sixth`}
                         id='big-width-links'
                         to={'#'}
                         onClick={scrollToBottom}

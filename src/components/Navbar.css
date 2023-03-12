@@ -133,10 +133,22 @@
     position: relative;
     right: 0;
     transition: right 1s;
-    border-bottom: none;
 }
 
 .nav-list.closed a.menu-item.fifth {
+    position: relative;
+    right: 9rem;
+    transition: right 0.15s;
+}
+
+.nav-list.open a.menu-item.sixth {
+    position: relative;
+    right: 0;
+    transition: right 1.2s;
+    border-bottom: none;
+}
+
+.nav-list.closed a.menu-item.sixth {
     position: relative;
     right: 9rem;
     transition: right 0.1s;
