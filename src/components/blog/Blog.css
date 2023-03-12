@@ -29,6 +29,7 @@
         width: 40%;
         justify-self: right;
         padding-right: 20%;
+        max-width: 200px;
     }
 
     .blog-title,

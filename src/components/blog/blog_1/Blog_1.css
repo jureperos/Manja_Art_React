@@ -1,0 +1,32 @@
+.blog_1-ctn {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.blog_1-datum {
+    display: flex;
+    justify-content: end;
+}
+
+.blog_1-img_1-description,
+.blog_1-img_2-description,
+.blog_1-img_3-description {
+    font-size: 13px;
+    width: 80%;
+    max-width: 330px;
+}
+
+.blog_1-img-descr-ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog_1-img_3-description {
+    max-width: 500px;
+}
+
+.blog_1-img_1 {
+    width: 50%;
+    max-width: 200px;
+}
