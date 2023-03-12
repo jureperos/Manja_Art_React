@@ -17,7 +17,7 @@ function Blog() {
     })
     return (
         <>
-            <div className='background'>
+            <div className='blog-content'>
                 <div className='blog-intro'>
                     <img src={ blogImg } alt="" className="blog-intro-img" />
                     <h1 className='blog-title'> Blog </h1>

@@ -6,8 +6,10 @@ import './Blog_1.css'
 function Blog_1() {
     return (
         <div className='blog_1-ctn'>
-            <h1 className="blog_1-title">Barve in pigmenti</h1>
-            <div className="blog_1-datum">Sobota, 4.3.2023</div>
+            <div className='blog_1-intro'>
+                <h1 className="blog_1-title">Barve in pigmenti</h1>
+                <div className="blog_1-datum">Sobota, 4.3.2023</div>
+            </div>
             <div className="txt-1">
             <p>Ko se lotevamo akvarelnega risanja potrebujemo 3 glavne materiale: barvo, papir in čopiče. A ne sme nam biti vseeno za njihovo kvaliteto. Za dober končni produkt, ki bo ohranjen še skozi veliko generacij, so pomembni kvalitetni materiali. S slednjimi bomo tudi veliko bolj uživali in ne bomo imeli občutka, da se s sliko »borimo«, kljub temu da smo ji kos. Tokrat se bo tematika vrtela okoli barv oz. pigmentov iz katerih nastane sama barva za akvarelno risanje ter kaj od njih pričakujemo.</p>
 

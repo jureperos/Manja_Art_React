@@ -15,15 +15,24 @@
     width: 65%;
 }
 
+.blog-link-intro {
+    display: flex;
+    flex-direction: column;
+}
+
 .blog-links h1 {
     font-family: 'IM Fell English SC', serif;
     font-size: 18px;
+    margin-bottom: 0;
 }
 
 .blog-date {
     justify-self: end;
     font-size: 15px;
     font-family: 'IM Fell English SC', serif;
+    align-self: flex-end;
+    padding-right: 2rem;
+    color: white;
 }
 
 .links-intro-txt {
@@ -31,12 +40,34 @@
     padding: 0 2rem 1rem 2rem;
 }
 
+.read-more {
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 370px) {
+    .blog-links h1 {
+        font-size: 22px;
+    }
+
+    .blog-link-intro {
+        padding-bottom: 3rem;
+    }
+}
+
 @media only screen and (min-width: 600px) {
     .blog-link-image {
         width: 180px;
     }
 
+    .blog-link-intro {
+        padding-bottom: 5rem;
+    }
+
     .blog-links {
-        width: 470px;
+        width: 520px;
+    }
+
+    .blog-links h1 {
+        font-size: 28px;
     }
 }

@@ -1,11 +1,27 @@
 .blog_1-ctn {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+    text-align: justify;
+    padding: 4rem 0;
+}
+
+.blog_1-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.blog_1-title {
+    margin-bottom: 0;
+    font-size: 48px;
+    text-align: center;
 }
 
 .blog_1-datum {
-    display: flex;
-    justify-content: end;
+    position: relative;
+    left: 13%;
+    font-size: 24px;
 }
 
 .blog_1-img_1-description,
@@ -29,4 +45,10 @@
 .blog_1-img_1 {
     width: 50%;
     max-width: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+    .blog_1-ctn {
+            width: 70%;
+        }
 }
