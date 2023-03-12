@@ -25,6 +25,10 @@
 }
 
 @media only screen and (min-width: 600px) {
+    .blog-intro {
+        margin-bottom: 5rem;
+    }
+
     .blog-intro-img {
         width: 40%;
         justify-self: right;
