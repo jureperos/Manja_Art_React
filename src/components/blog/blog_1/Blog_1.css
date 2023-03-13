@@ -42,9 +42,11 @@
     max-width: 500px;
 }
 
-.blog_1-img_1 {
-    width: 50%;
-    max-width: 200px;
+.blog_1-img_1,
+.blog_1-img_2,
+.blog_1-img_3 {
+    width: 80%;
+    max-width: 300px;
 }
 
 @media only screen and (min-width: 768px) {

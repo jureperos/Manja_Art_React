@@ -1,6 +1,6 @@
-import img_1 from './Quinacridone gold hue.png'
-import img_2 from './Permanent Alizarin Crimson.png'
-import img_3 from './Quinacridone gold hue tube.png'
+import img_1 from './Quinacridone gold hue.jpg'
+import img_2 from './Permanent Alizarin Crimson.jpg'
+import img_3 from './Quinacridone gold hue tube.jpg'
 import './Blog_1.css'
 
 function Blog_1() {
