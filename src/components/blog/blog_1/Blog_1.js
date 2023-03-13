@@ -7,7 +7,7 @@ function Blog_1() {
     return (
         <div className='blog_1-ctn'>
             <div className='blog_1-intro'>
-                <h1 className="blog_1-title">Barve in pigmenti</h1>
+                <h1 className="blog_1-title">Akvarel: Barve in pigmenti</h1>
                 <div className="blog_1-datum">Sobota, 4.3.2023</div>
             </div>
             <div className="txt-1">

@@ -44,7 +44,7 @@ const OstaloArr = [
         {
         index: 7,
         src: require('./assets/Ostalo/po_dezju.jpg'),
-        title: 'po dezju',
+        title: 'Po dežju',
         description: 'Medij suhi pastel'
     },
         {

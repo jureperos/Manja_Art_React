@@ -16,11 +16,12 @@
     margin-bottom: 0;
     font-size: 48px;
     text-align: center;
+    font-family: 'IM Fell English', serif;
 }
 
 .blog_1-datum {
     position: relative;
-    left: 13%;
+    left: 29%;
     font-size: 24px;
     font-family: 'Italianno', cursive;
 }
@@ -44,10 +45,14 @@
 }
 
 .blog_1-img_1,
-.blog_1-img_2,
 .blog_1-img_3 {
     width: 80%;
     max-width: 300px;
+}
+
+.blog_1-img_2 {
+    width: 80%;
+    max-width: 500px;
 }
 
 @media only screen and (min-width: 768px) {
