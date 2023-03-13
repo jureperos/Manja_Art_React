@@ -17,7 +17,7 @@ const NaprodajArr = [
         sciName: 'Olea europaea',
         description: 'Oljka',
         medium: 'Suhi pasteli',
-        dimensions: '15 x 20cm',
+        dimensions: '14.5 x 19cm',
         price: '70 €',
         
     },    
@@ -39,7 +39,7 @@ const NaprodajArr = [
         sciName: 'Aglais io',
         description: 'Dnevni pavlinček',
         medium: 'Suhi pasteli',
-        dimensions: '18 x 13',
+        dimensions: '20 x 14.5 cm',
         price: '120 €',
         
     },
@@ -50,7 +50,7 @@ const NaprodajArr = [
         sciName: 'Vulpes vulpes',
         description: 'Portret navadne lisice. Referenčna fotografija Unsplash.com (Yuriy Chemerys)',
         medium: 'Suhi pasteli',
-        dimensions: '24 x 30',
+        dimensions: '22 x 28 cm',
         price: '450 €',
         
     },
@@ -60,7 +60,7 @@ const NaprodajArr = [
         title: 'Zvezdna noč 2020',
         description: 'Reprodukcija slike Zvezdna noč (slikar Vincent van Gogh). Medij akrilne barve.',
         medium: 'Akril',
-        dimensions: '24 x 18',
+        dimensions: '24 x 18cm',
         price: '100 €', 
         
     },
@@ -69,8 +69,26 @@ const NaprodajArr = [
         src: require('./assets/Ostalo/6_na_dan.png'),
         title: '6 na dan 2023',
         description: 'Na voljo kot print',
-        medium: 'Gvaš',
-        price: ''
+        medium: 'Gvaš A5 format',
+        price: '10 €'
+    },
+        {
+        index: 7,
+        src: require('./assets/Ostalo/vrata_kopra.png'),
+        title: 'Vrata Kopra',
+        description: 'Vrata Kopra',
+        medium: 'Suhi pastel',
+        dimensions: '14.5 x 19.8 cm',
+        price: '100 €'
+    },
+        {
+        index: 8,
+        src: require('./assets/Ostalo/cvet_med_cvetovi.png'),
+        title: 'Cvet med cvetovi',
+        description: 'Cvet med cvetovi',
+        medium: 'Medij suhi pastel',
+        dimensions: '24.5 x 17 cm',
+        price: '80 €'
     },
 ]
 
