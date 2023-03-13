@@ -65,6 +65,12 @@ const OstaloArr = [
         title: 'Vrata Kopra',
         description: 'Medij suhi pastel'
     },
+        {
+        index: 11,
+        src: require('./assets/Ostalo/Po_nevihti.jpg'),
+        title: 'Po nevihti',
+        description: 'Akvarel na akvarelnem papirju'
+    },
 ]
 
 

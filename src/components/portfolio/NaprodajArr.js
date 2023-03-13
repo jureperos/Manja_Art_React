@@ -69,8 +69,8 @@ const NaprodajArr = [
         src: require('./assets/Ostalo/6_na_dan.png'),
         title: '6 na dan 2023',
         description: 'Na voljo kot print',
-        medium: 'Gvaš',
-        price: ''
+        medium: 'Gvaš A5 format',
+        price: '10 €'
     },
         {
         index: 7,
