@@ -1,6 +1,7 @@
 import img_1 from './Quinacridone gold hue.jpg'
 import img_2 from './Permanent Alizarin Crimson.jpg'
 import img_3 from './Quinacridone gold hue tube.jpg'
+import img_4 from './PBr7_barvni_vzorci.jpg'
 import './Blog_1.css'
 
 function Blog_1() {
@@ -53,7 +54,13 @@ function Blog_1() {
 
             <p>Način kako lahko zabeležimo in prikažemo te lastnosti barv je z barvnimi vzorci, ki so prikazani spodaj. Ne samo, da vidimo kako se barve obnašajo, ampak je tudi dober način za primerjanje barv med seboj in med različnimi znamkami. Lahko tudi vidimo, da čeprav so pigmenti med proizvajalci enaki pa same barve niso povsem identične. Za nekatere pigmente lahko tudi opazimo, da čeprav je uporabljen isti pigment, pa dobimo ven povsem drugačne barve – kot dober primer tega je pigment Pbr7. To je zaradi samega načina obdelave pigmenta, ki je tudi med proizvajalci različen.</p>
 
+            <div className="blog_1-img-descr-ctn">
+                <img src={img_4} alt="PBr7_barvni_vzorci" className="blog_1-img_4" />
+                <p className="blog_1-img_4-description">
+                    Slika 4: Primer pigmenta Pbr 7 oz. barve Sienna in Umber, enega izmed najbolj uporabljenih zemeljskih barv na paleti umetnika. Kakšno barvo dobimo je odvisno od načina obdelave. Pri obdelavi višje temperature gre odtenek bolj proti rdečkastem tonu.
 
+                </p>
+            </div>
 
 
 

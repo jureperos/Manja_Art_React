@@ -2,8 +2,8 @@ const OstaloArr = [
     {
         index: 0,
         src: require('./assets/Ostalo/buca.jpg'),
-        title: 'Toplina jeseni',
-        description: 'Toplina jeseni. Medij oljne barve na platnu.',
+        title: 'Jesenska toplina',
+        description: 'Jesenska toplina. Medij oljne barve na platnu.',
     },
         {
         index: 1,
@@ -57,13 +57,13 @@ const OstaloArr = [
         index: 9,
         src: require('./assets/Ostalo/cvet_med_cvetovi.png'),
         title: 'Cvet med cvetovi',
-        description: 'Medij suhi pastel'
+        description: 'Medij suhi pasteli'
     },        
         {
         index: 10,
         src: require('./assets/Ostalo/vrata_kopra.png'),
         title: 'Vrata Kopra',
-        description: 'Medij suhi pastel'
+        description: 'Medij suhi pasteli'
     },
         {
         index: 11,

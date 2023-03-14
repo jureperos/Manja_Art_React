@@ -86,7 +86,13 @@ function Navbar() {
                         </Link>
                     </div>
                 </div>
-                <div className='signature'>Manja Tišler</div>
+                <div className='signature'>
+                    <Link className="signature-link"
+                        to={'/'}
+                    >
+                        Manja Tišler
+                    </Link>
+                </div>
             </div>
             <img className="banner" src={ banner } alt="" />
         </div>

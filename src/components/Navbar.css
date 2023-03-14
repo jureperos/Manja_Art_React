@@ -162,6 +162,11 @@
     font-size: x-large;
 }
 
+.signature-link {
+    text-decoration: none;
+    color: white;
+}
+
 @media only screen and (min-width: 900px) {
     .banner {
         height: 391px;

@@ -59,7 +59,7 @@ const NaprodajArr = [
         src: require('./assets/Ostalo/zvezdna_noc.png'),
         title: 'Zvezdna noč 2020',
         description: 'Reprodukcija slike Zvezdna noč (slikar Vincent van Gogh). Medij akrilne barve.',
-        medium: 'Akril',
+        medium: 'Akril na platnu',
         dimensions: '24 x 18cm',
         price: '100 €', 
         
@@ -69,24 +69,25 @@ const NaprodajArr = [
         src: require('./assets/Ostalo/6_na_dan.png'),
         title: '6 na dan 2023',
         description: 'Na voljo kot print',
-        medium: 'Gvaš A5 format',
+        medium: 'Gvaš (na voljo kot print)',
+        dimensions: 'A5 format',
         price: '10 €'
     },
         {
         index: 7,
         src: require('./assets/Ostalo/vrata_kopra.png'),
-        title: 'Vrata Kopra',
+        title: 'Vrata Kopra 2022',
         description: 'Vrata Kopra',
-        medium: 'Suhi pastel',
+        medium: 'Suhi pasteli',
         dimensions: '14.5 x 19.8 cm',
         price: '100 €'
     },
         {
         index: 8,
         src: require('./assets/Ostalo/cvet_med_cvetovi.png'),
-        title: 'Cvet med cvetovi',
+        title: 'Cvet med cvetovi 2022',
         description: 'Cvet med cvetovi',
-        medium: 'Medij suhi pastel',
+        medium: 'Medij suhi pasteli',
         dimensions: '24.5 x 17 cm',
         price: '80 €'
     },

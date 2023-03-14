@@ -13,7 +13,7 @@ const PortretiArr = [
     },
         {
         index: 2,
-        src: require('./assets/portreti/dekle_z_uhanom.jpg'),
+        src: require('./assets/portreti/dekle_z_uhanom.png'),
         title: 'Dekle z bisernim uhanom',
         description: 'Reprodukcija slike Dekle z bisernim uhanom (slikar Johannes Vermeer). Medij suhi pasteli.'
     },
