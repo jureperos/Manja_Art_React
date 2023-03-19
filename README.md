@@ -1,5 +1,5 @@
 # Manja_Art_React
 
-An artists webpage made with React. 
+An artists webpage made with React.
 
-Link: manjatisler.com
+Live page: [manjatisler.com](https://www.manjatsiler.com)
