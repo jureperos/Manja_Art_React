@@ -8,9 +8,9 @@ const NaprodajArr = [
         medium: 'Akvarel',
         dimensions: '17.7 x 25.8 cm',
         price: '200 €',
-        
-    },        
-        {
+
+    },
+    {
         index: 1,
         src: require('./assets/rastline/Olea_europaea.png'),
         title: 'Oljka 2021',
@@ -19,9 +19,9 @@ const NaprodajArr = [
         medium: 'Suhi pasteli',
         dimensions: '14.5 x 19cm',
         price: '70 €',
-        
-    },    
-        {
+
+    },
+    {
         index: 2,
         src: require('./assets/linorez/lino.jpg'),
         title: 'Navadna bodika 2022',
@@ -30,21 +30,10 @@ const NaprodajArr = [
         medium: 'Linorez + akrilni markerji (na voljo kot print)',
         dimensions: '9 x 11 cm',
         price: '15 €',
-        
+
     },
-        {
+    {
         index: 3,
-        src: require('./assets/zivali/inachis_io.png'),
-        title: 'Dnevni pavlinček 2022',
-        sciName: 'Aglais io',
-        description: 'Dnevni pavlinček',
-        medium: 'Suhi pasteli',
-        dimensions: '20 x 14.5 cm',
-        price: '120 €',
-        
-    },
-        {
-        index: 4,
         src: require('./assets/portreti/lisica.jpg'),
         title: 'Navadna lisica 2021',
         sciName: 'Vulpes vulpes',
@@ -52,20 +41,20 @@ const NaprodajArr = [
         medium: 'Suhi pasteli',
         dimensions: '22 x 28 cm',
         price: '450 €',
-        
+
     },
-        {
-        index: 5,
+    {
+        index: 4,
         src: require('./assets/Ostalo/zvezdna_noc.png'),
         title: 'Zvezdna noč 2020',
         description: 'Reprodukcija slike Zvezdna noč (slikar Vincent van Gogh). Medij akrilne barve.',
         medium: 'Akril na platnu',
         dimensions: '24 x 18cm',
-        price: '100 €', 
-        
+        price: '100 €',
+
     },
-        {
-        index: 6,
+    {
+        index: 5,
         src: require('./assets/Ostalo/6_na_dan.png'),
         title: '6 na dan 2023',
         description: 'Na voljo kot print',
@@ -73,8 +62,8 @@ const NaprodajArr = [
         dimensions: 'A5 format',
         price: '10 €'
     },
-        {
-        index: 7,
+    {
+        index: 6,
         src: require('./assets/Ostalo/vrata_kopra.png'),
         title: 'Vrata Kopra 2022',
         description: 'Vrata Kopra',
@@ -82,8 +71,8 @@ const NaprodajArr = [
         dimensions: '14.5 x 19.8 cm',
         price: '100 €'
     },
-        {
-        index: 8,
+    {
+        index: 7,
         src: require('./assets/Ostalo/cvet_med_cvetovi.png'),
         title: 'Cvet med cvetovi 2022',
         description: 'Cvet med cvetovi',
