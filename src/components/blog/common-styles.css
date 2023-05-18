@@ -1,0 +1,33 @@
+.blog-ctn {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 4rem 0;
+}
+
+.blog-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.blog-title {
+    margin-bottom: 0;
+    font-size: 48px;
+    text-align: center;
+    font-family: 'IM Fell English', serif;
+}
+
+.blog-datum {
+    position: relative;
+    left: 29%;
+    font-size: 24px;
+    font-family: 'Italianno', cursive;
+}
+
+@media only screen and (min-width: 768px) {
+    .blog-ctn {
+            width: 70%;
+        }
+}

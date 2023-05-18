@@ -1,31 +1,3 @@
-.blog_1-ctn {
-    width: 80%;
-    margin: 0 auto;
-    text-align: justify;
-    padding: 4rem 0;
-}
-
-.blog_1-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 3rem;
-}
-
-.blog_1-title {
-    margin-bottom: 0;
-    font-size: 48px;
-    text-align: center;
-    font-family: 'IM Fell English', serif;
-}
-
-.blog_1-datum {
-    position: relative;
-    left: 29%;
-    font-size: 24px;
-    font-family: 'Italianno', cursive;
-}
-
 .blog_1-img_1-description,
 .blog_1-img_2-description,
 .blog_1-img_3-description,
