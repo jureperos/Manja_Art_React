@@ -15,7 +15,7 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 
 function SetImages (props) {
     const [lBoxOpen, setlBoxOpen] = useState(false)
-    const [currIndex, setcurrIndex] = useState(0);
+    const [currIndex, setCurrIndex] = useState(0);
 
     function openLightbox() {
         if (lBoxOpen === true) {
@@ -61,12 +61,12 @@ function SetImages (props) {
                     onClick={
                         () => {
                             setlBoxOpen(true);
-                            setcurrIndex(image.index);
+                            setCurrIndex(image.index);
                         }
                     } >
                         <LazyLoadImage 
                             height={props.height}
-                            alt={ 'nika zaenkrat' }
+                            alt={ image.title }
                             src={ image.src }
                             offset={ 100 }
                             effect='blur'
