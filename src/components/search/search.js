@@ -5,12 +5,14 @@ export default function Search(props) {
     //stores the search results
     const foundArr = []
     regSearch(props.text);
+
     if (!props.text) {
         return
     }
+
     function regSearch(searchTerm) {
         const regex = new RegExp(searchTerm, 'i');
-        
+            console.log(props.text);
         for (let i = 0; i <= RastlineArr.length -1; i++) {
 
             if (regex.test(RastlineArr[i].title)) {
