@@ -8,11 +8,11 @@ import MyLightbox from './lightbox/MyLightbox'
 
 function SetImages (props) {
     const [currIndex, setCurrIndex] = useState(0);
-    const [lboxUnmounted, setLboxUnmounted] = useState(true)
+    const [lboxUnmounted, setLboxUnmounted] = useState(true);
    
     //call this from MyLightbox to indicate the component unmounted
     function handleLboxUnmount() {
-        setLboxUnmounted(true)
+        setLboxUnmounted(true);
     }
 
 
@@ -51,12 +51,12 @@ function SetImages (props) {
                     currIndex={currIndex} 
                     onUnmount={handleLboxUnmount}
                     mountState={lboxUnmounted}
-                />
-            }
+            /> }
+
         </div>
 
           
     )
 }
 
-export default SetImages
+export default SetImages;
