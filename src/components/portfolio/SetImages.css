@@ -51,17 +51,6 @@
     font-size: large;
 }
 
-/* lightbox captions styling */
-.yarl__slide_captions_container {
-    background: none !important;
-}
-
-.yarl__slide_image {
-    max-height: 420px !important;
-}
-
-
-
 @media only screen and (min-width: 600px) {
     .all-img-container {
         grid-template-columns: 1fr 1fr;
