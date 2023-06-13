@@ -9,6 +9,7 @@ import Zivljenjepis from "./Zivljenjepis";
 import NaprodajLayout from "./NaprodajLayout";
 import NotFound from "./NotFound";
 import Blog from "./blog/Blog";
+import TextInput from "./search/TextInput";
 
 import MergedArr from './portfolio/MergedArr';
 import RastlineArr from './portfolio/RaslineArr';
@@ -34,7 +35,9 @@ function Content () {
                     index element={ 
                         <SetImages
                         imgArr={MergedArr}
-                        height={200}/> 
+                        height={200}
+                        input={ <TextInput /> }
+                        /> 
                     } />
 
                     <Route
@@ -42,7 +45,9 @@ function Content () {
                     element={ 
                         <SetImages
                         imgArr={MergedArr}
-                        height={200}/> 
+                        height={200}
+                        input={ <TextInput /> }
+                        /> 
                     } />
 
                     <Route 
@@ -50,7 +55,8 @@ function Content () {
                     element={ 
                         <SetImages 
                         imgArr={RastlineArr}
-                        height={220}/> 
+                        height={220}
+                        /> 
                     } />
 
                     <Route 
@@ -59,7 +65,8 @@ function Content () {
                         <SetImages 
                         imgArr={ZivaliArr}
                         height={200}
-                        frameNum={"frame-num"} /> 
+                        frameNum={"frame-num"} 
+                        /> 
                     } />
 
                     <Route 
@@ -67,7 +74,8 @@ function Content () {
                     element={ 
                         <SetImages 
                         imgArr={PortretiArr}
-                        height={200}/> 
+                        height={200}
+                        /> 
                     } />
 
                     <Route 
@@ -75,7 +83,8 @@ function Content () {
                     element={ 
                         <SetImages 
                         imgArr={LinorezArr}
-                        height={200}/> 
+                        height={200}
+                        /> 
                     } />
 
                     <Route 
@@ -84,7 +93,8 @@ function Content () {
                         <SetImages 
                         imgArr={OstaloArr}
                         height={200}
-                        frameNum={"frame-num"}/> 
+                        frameNum={"frame-num"}
+                        /> 
                     } />
                 </Route>
 

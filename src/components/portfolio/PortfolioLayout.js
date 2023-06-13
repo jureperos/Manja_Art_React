@@ -9,7 +9,6 @@ import {BiPaintRoll} from 'react-icons/bi'
 import {IoMdImages} from 'react-icons/io'
 import { IconContext } from "react-icons"
 import {BiSearchAlt2} from "react-icons/bi"
-import TextInput from "../search/TextInput"
 
 
 function PortfolioLayout () {
@@ -64,7 +63,6 @@ function PortfolioLayout () {
                     <p>Ostalo</p>
                 </Link>
             </div>
-        <TextInput />
             <Outlet />
         </>
     )

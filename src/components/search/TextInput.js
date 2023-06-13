@@ -8,7 +8,6 @@ const TextInput = () => {
   const handleChange = (event) => {
     setText(event.target.value);
   };
-
   return (
     <div>
       <input type="text" value={text} onChange={handleChange} />

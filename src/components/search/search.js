@@ -1,28 +1,28 @@
-import RastlineArr from '../portfolio/RaslineArr';
+import MergedArr from '../portfolio/MergedArr';
 
 
-export default function Search(props) {
+export default function Search({text}) {
     //stores the search results
     const foundArr = []
-    regSearch(props.text);
+    regSearch(text);
 
-    if (!props.text) {
+    if (!text) {
         return
     }
 
     function regSearch(searchTerm) {
         const regex = new RegExp(searchTerm, 'i');
-            console.log(props.text);
-        for (let i = 0; i <= RastlineArr.length -1; i++) {
 
-            if (regex.test(RastlineArr[i].title)) {
-                foundArr.push(RastlineArr[i].title);
+        for (let i = 0; i <= MergedArr.length -1; i++) {
+
+            if (regex.test(MergedArr[i].title)) {
+                foundArr.push(MergedArr[i].title);
             }
-            if (regex.test(RastlineArr[i].sciName)) {
-                foundArr.push(RastlineArr[i].sciName);
+            if (regex.test(MergedArr[i].sciName)) {
+                foundArr.push(MergedArr[i].sciName);
             }
-            if (regex.test(RastlineArr[i].description)) {
-                foundArr.push(RastlineArr[i].description);
+            if (regex.test(MergedArr[i].description)) {
+                foundArr.push(MergedArr[i].description);
             }
 
         }
