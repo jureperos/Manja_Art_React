@@ -8,15 +8,26 @@ import {
 import {BiPaintRoll} from 'react-icons/bi'
 import {IoMdImages} from 'react-icons/io'
 import { IconContext } from "react-icons"
+import {BiSearchAlt2} from "react-icons/bi"
 import TextInput from "../search/TextInput"
+
 
 function PortfolioLayout () {
     
     return (
         <>
             <div className="link-ctn">
+        
                 <Link 
-                to={'/portfolio/rastline'}
+                    to={'/portfolio/razišči'} >
+                    <IconContext.Provider value={{ className: 'link-icon' }}>
+                        <BiSearchAlt2/>
+                    </IconContext.Provider>
+                    <p>Razišči</p>
+                </Link>
+
+                <Link 
+                    to={'/portfolio/rastline'}
                 >
                     <IconContext.Provider value={{ className: 'link-icon' }}>
                         <GiLotusFlower />
