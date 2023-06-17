@@ -23,7 +23,7 @@ const NaprodajArr = [
     },
     {
         index: 2,
-        src: require('./assets/linorez/lino.jpg'),
+        src: require('./assets/Ostalo/lino.jpg'),
         title: 'Navadna bodika 2022',
         sciName: 'Ilex aquifolium',
         description: 'Navadna bodika. Print na japonskem papirju. Printi se razlikujejo',

@@ -5,10 +5,8 @@ import {
     GiFox,
     GiMonaLisa
 } from 'react-icons/gi'
-import {BiPaintRoll} from 'react-icons/bi'
-import {IoMdImages} from 'react-icons/io'
+import {IoMdImages, IoIosCreate} from 'react-icons/io'
 import { IconContext } from "react-icons"
-import { useRef, useEffect } from 'react'
 
 
 function PortfolioLayout () {
@@ -40,11 +38,11 @@ function PortfolioLayout () {
                     <p>Portreti</p>
                 </Link>
 
-                <Link to={'/portfolio/linorez'}>
+                <Link to={'/portfolio/digital'}>
                     <IconContext.Provider value={{ className: 'link-icon' }}>
-                        <BiPaintRoll />
+                        <IoIosCreate/>
                     </IconContext.Provider>
-                    <p>Linorez</p>
+                    <p>Digitalna ilustracija</p>
                 </Link>
 
                 <Link to={'/portfolio/ostalo'} className='last-link'>

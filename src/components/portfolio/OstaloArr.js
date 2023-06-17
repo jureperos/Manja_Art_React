@@ -71,6 +71,14 @@ const OstaloArr = [
         title: 'Po nevihti',
         description: 'Akvarel na akvarelnem papirju'
     },
+
+        {
+        index: 12,
+        src: require('./assets/Ostalo/lino.jpg'),
+        title: 'Navadna bodika',
+        sciName: 'Ilex aquifolium',
+        description: 'Navadna bodika. Ink + akvarelni markerji na japonskem papirju',
+    }
 ]
 
 
