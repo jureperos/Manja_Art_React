@@ -18,7 +18,7 @@ function PortfolioLayout () {
             <div className="link-ctn">
         
                 <Link 
-                    to={'/portfolio/razišči'} >
+                    to={'/portfolio'} >
                     <IconContext.Provider value={{ className: 'link-icon' }}>
                         <BiSearchAlt2/>
                     </IconContext.Provider>

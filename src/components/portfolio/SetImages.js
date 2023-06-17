@@ -18,9 +18,6 @@ function SetImages (props) {
 
     return (
         <> 
-            <div>
-                {props.input}    
-            </div>
             <div className={`all-img-container ${props.frameNum}`}>
                 {props.imgArr.map((image) => {
                     return (
@@ -31,7 +28,7 @@ function SetImages (props) {
                                 setCurrIndex(image.index);
                                 setLboxUnmounted(false)
                             }
-                        } >
+                        }>
                             <LazyLoadImage 
                                 height={props.height}
                                 alt={ image.title }

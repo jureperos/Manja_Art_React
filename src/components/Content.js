@@ -1,5 +1,6 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 import './Content.css';
+
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Home from './Home';
@@ -11,7 +12,6 @@ import NotFound from "./NotFound";
 import Blog from "./blog/Blog";
 import TextInput from "./search/TextInput";
 
-import MergedArr from './portfolio/MergedArr';
 import RastlineArr from './portfolio/RaslineArr';
 import ZivaliArr from './portfolio/ZivaliArr';
 import PortretiArr from './portfolio/PortretiArr';
@@ -22,7 +22,6 @@ import BlogRoute from "./blog/BlogRoute";
 
 
 function Content () {
-
     return (
         <div className="content">
             <Navbar />
@@ -33,21 +32,7 @@ function Content () {
 
                     <Route
                     index element={ 
-                        <SetImages
-                        imgArr={MergedArr}
-                        height={200}
-                        input={ <TextInput /> }
-                        /> 
-                    } />
-
-                    <Route
-                    path="razišči"                 
-                    element={ 
-                        <SetImages
-                        imgArr={MergedArr}
-                        height={200}
-                        input={ <TextInput /> }
-                        /> 
+                        <TextInput />
                     } />
 
                     <Route 
