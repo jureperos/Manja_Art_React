@@ -15,10 +15,10 @@ import TextInput from "./search/TextInput";
 import RastlineArr from './portfolio/RaslineArr';
 import ZivaliArr from './portfolio/ZivaliArr';
 import PortretiArr from './portfolio/PortretiArr';
-import LinorezArr from  './portfolio/LinorezArr';
 import OstaloArr from './portfolio/OstaloArr';
 import NaprodajArr from './portfolio/NaprodajArr';
 import BlogRoute from "./blog/BlogRoute";
+import DigitalnaArr from "./portfolio/DigitalnaArr";
 
 
 function Content () {
@@ -64,17 +64,16 @@ function Content () {
                     } />
 
                     <Route 
-                    path="linorez" 
-                    element={ 
-                        <SetImages 
-                        imgArr={LinorezArr}
-                        height={200}
-                        /> 
-                    } />
-
-                    <Route 
+                            path="digital" 
+                            element={ 
+                              <SetImages 
+                                imgArr={DigitalnaArr}
+                                height={200}/> 
+                            } 
+                        />
+                    <Route  
                     path="ostalo" 
-                    element={ 
+                    element={
                         <SetImages 
                         imgArr={OstaloArr}
                         height={200}
