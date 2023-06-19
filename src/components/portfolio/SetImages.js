@@ -2,7 +2,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './SetImages.css';
 
-import MyLightbox from './lightbox/MyLightbox' 
+import MyLightbox from './lightbox/MyLightbox';
 
 import { useState } from 'react';
 
@@ -59,4 +59,4 @@ function SetImages (props) {
     )
 }
 
-export default SetImages
+export default SetImages;

@@ -10,7 +10,7 @@ import Zivljenjepis from "./Zivljenjepis";
 import NaprodajLayout from "./NaprodajLayout";
 import NotFound from "./NotFound";
 import Blog from "./blog/Blog";
-import TextInput from "./search/TextInput";
+import ImageHandler from "./search/ImageHandler";
 
 import RastlineArr from './portfolio/RaslineArr';
 import ZivaliArr from './portfolio/ZivaliArr';
@@ -32,7 +32,7 @@ function Content () {
 
                     <Route
                     index element={ 
-                        <TextInput />
+                        <ImageHandler/>
                     } />
 
                     <Route 
