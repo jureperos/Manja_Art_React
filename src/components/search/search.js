@@ -4,7 +4,7 @@ export default function Search(text, findImg) {
 
 
     if (text.length < 3) {
-       findImg([]) 
+        return null
     }
     const regex = new RegExp(text, 'i');
 

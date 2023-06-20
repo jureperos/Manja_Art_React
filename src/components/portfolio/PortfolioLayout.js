@@ -15,15 +15,6 @@ function PortfolioLayout () {
     return (
         <>
             <div className="link-ctn">
-        
-                <Link 
-                    to={'/portfolio'} >
-                    <IconContext.Provider value={{ className: 'link-icon' }}>
-                        <BiSearchAlt2/>
-                    </IconContext.Provider>
-                    <p>Razišči</p>
-                </Link>
-
                 <Link 
                     to={'/portfolio/rastline'}
                 >

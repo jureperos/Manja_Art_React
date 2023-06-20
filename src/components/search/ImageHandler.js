@@ -10,8 +10,9 @@ const ImageHandler = () => {
 
     const handleTextChange = (event) => {
         setText(event.target.value);
+
         if (text.length < 3) {
-            setFoundImage([])
+            setFoundImage([]);
         }
     };
 
