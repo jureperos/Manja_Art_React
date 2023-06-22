@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Search from './search';
 import "./ImageHandler.css";
 import SetImages from '../portfolio/SetImages';
@@ -6,6 +6,12 @@ import SetImages from '../portfolio/SetImages';
 const ImageHandler = ({imgArr, height, frameNum}) => {
     const [text, setText] = useState('');
     const [foundImg, setFoundImage] = useState([]);
+
+    // reset search bar and images when clicking different link
+    useEffect(() => {
+        setText('');
+        setFoundImage([]);
+    }, [imgArr]) 
 
     const handleTextChange = (event) => {
         setText(event.target.value);
@@ -23,10 +29,17 @@ const ImageHandler = ({imgArr, height, frameNum}) => {
         Search(text, handleFoundImage, imgArr);
     };
 
+    const handleEnterKey = (event) => {
+        if (event.key === 'Enter') {
+            setFoundImage([]);
+            handleSearchClick(); 
+        }
+    }
+
     return (
         <div>
             <div className="input-ctn">
-                <input type="text" value={text} onChange={handleTextChange} className="input-box"/>
+                <input type="text" value={text} onChange={handleTextChange} onKeyDown={handleEnterKey} className="input-box"/>
                     <button onClick={() => {
                         setFoundImage([]);
                         handleSearchClick();
