@@ -78,20 +78,48 @@ const ZivaliArr = [
     },
     {
         index: 11,
+        src: require('./assets/zivali/belouska.jpeg'),
+        title: 'Belouška',
+        sciName: 'Natrix natrix',
+        description: 'Belouška. Medij Akvarel'
+    },
+    {
+        index: 12,
+        src: require('./assets/zivali/drsalec.jpeg'),
+        title: 'Vodni drsalec',
+        sciName: 'Gerridae',
+        description: 'Vodni drsalec. Medij akvarel'
+    },
+    {
+        index: 13,
+        src: require('./assets/zivali/pastir.jpeg'),
+        title: 'Kačji pastir',
+        sciName: '',
+        description: 'Kačji pastir. Medij akvarel.'
+    },
+    {
+        index: 14,
+        src: require('./assets/zivali/rega.jpeg'),
+        title: 'zelena rega',
+        sciName: 'Hyla arborea',
+        description: 'Zelena rega. Medij akvarel.'
+    },
+    {
+        index: 15,
         src: require('./assets/zivali/Vulpes_vulpes_brezozadja.jpg'),
         title: 'Navadna lisica',
         sciName: 'Vulpes vulpes',
         description: 'Lobanja navadne lisice. Medij grafit in gvaš.'
     },
     {
-        index: 12,
+        index: 16,
         src: require('./assets/zivali/Chelonia_mydas_akvarel.jpg'),
         title: 'Orjaška črepaha',
         sciName: 'Chelonia mydas',
         description: 'Glava orjaške črepahe. Medij akvarel in ink.'
     },
     {
-        index: 13,
+        index: 17,
         src: require('./assets/zivali/Chelonia_mydas_penink.jpg'),
         title: 'Orjaška črepaha',
         sciName: 'Chelonia mydas',
@@ -99,13 +127,13 @@ const ZivaliArr = [
     },
     {
         src: require('./assets/zivali/Mytilus_galloprovincialis_sken.jpg'),
-        index: 14,
+        index: 18,
         title: 'Užitna klapavica',
         sciName: 'Mytilus galloprovincialis',
         description: 'Užitna klapavica. Medij akvarel.'
     },
     {
-        index: 15,
+        index: 19,
         src: require('./assets/zivali/Haliotis_lamellosa_sken.jpg'),
         title: 'Morsko uho',
         sciName: 'Haliotis lamellosa',
@@ -113,71 +141,71 @@ const ZivaliArr = [
     },
     {
         src: require('./assets/zivali/Ostrea_spp._sken.jpg'),
-        index: 16,
+        index: 20,
         title: 'Ostriga',
         sciName: 'Ostrea spp.',
         description: 'Ostriga. Medij akvarel.'
     },
     {
-        index: 17,
+        index: 21,
         src: require('./assets/zivali/Murex_brandaris_sken.jpg'),
         title: 'Bodičasti volek',
         sciName: 'Murex brandaris',
         description: 'Bodičasti volek. Medij akvarel.'
     },
     {
-        index: 18,
+        index: 22,
         src: require('./assets/zivali/Chlamys_varia_sken - Copy.jpg'),
         title: 'Mala pokrovača',
         sciName: 'Chlamys varia',
         description: 'Mala pokrovača. Medij akvarel.'
     },
     {
-        index: 19,
+        index: 23,
         src: require('./assets/zivali/Proteopecten_glaber_sken.jpg'),
         title: 'Pokrovača',
         sciName: 'Proteopecten glaber',
         description: 'Pokrovača. Medij akvarel.'
     },
     {
-        index: 20,
+        index: 24,
         src: require('./assets/zivali/Dentalium_vulgare_sken.jpg'),
         title: 'Slonovi zobki',
         sciName: 'Dentalium vulgare',
         description: 'Slonovi zobki. Medij akvarel.'
     }, {
-        index: 21,
+        index: 25,
         src: require('./assets/zivali/Arca_noae_sken.jpg'),
         title: 'Noetova barka',
         sciName: 'Arca noae',
         description: 'Noetova barka. Medij akvarel.'
     }, {
-        index: 22,
+        index: 26,
         src: require('./assets/zivali/Aporrhais_pes-pelecani_Sken.jpg'),
         title: 'Pelikanovo stopalce',
         sciName: 'Aporrhais pes-pelecani',
         description: 'Pelikanovo stopalce. Medij akvarel.',
     }, {
-        index: 23,
+        index: 27,
         src: require('./assets/zivali/Turritella_communis_sken.jpg'),
         title: 'Vretence',
         sciName: 'Turritella communis',
         description: 'Vretence. Medij akvarel.'
     }, {
-        index: 24,
+        index: 28,
         src: require('./assets/zivali/Venus_verrucosa_sken.jpg'),
         title: 'Dondola',
         sciName: 'Venus verrucosa',
         description: 'Dondola. Medij akvarel'
     }, {
-        index: 25,
+        index: 29,
         src: require('./assets/zivali/Cerastoderma_edule_sken.jpg'),
         title: 'Srčanka',
         sciName: 'Cerastoderma edule',
         description: 'Srčanka. Medij akvarel.'
     },
     {
-        index: 26,
+        index: 30,
         src: require('./assets/zivali/inachis_io.png'),
         title: 'Dnevni pavlinček',
         sciName: 'Aglais io',
