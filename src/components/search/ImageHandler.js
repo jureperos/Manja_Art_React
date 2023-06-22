@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import Search from './search';
 import "./ImageHandler.css";
 import SetImages from '../portfolio/SetImages';
-import MergedArr from '../portfolio/MergedArr';
 
-const ImageHandler = () => {
+const ImageHandler = ({imgArr, height, frameNum}) => {
     const [text, setText] = useState('');
     const [foundImg, setFoundImage] = useState([]);
 
@@ -21,7 +20,7 @@ const ImageHandler = () => {
     };
 
     const handleSearchClick = () => {
-        Search(text, handleFoundImage);
+        Search(text, handleFoundImage, imgArr);
     };
 
     return (
@@ -35,9 +34,10 @@ const ImageHandler = () => {
             </div>
             <div>        
                  <SetImages
-                 //check if searchArr is empty else show all results with MergedArr
-                 imgArr={(foundImg.length === 0) ? MergedArr: foundImg}
-                 height={200}
+                 //check if searchArr is empty else show all results 
+                 imgArr={(foundImg.length === 0) ? imgArr: foundImg}
+                 height={height}
+                 frameNum={frameNum} 
                 />
             </div>
         </div>

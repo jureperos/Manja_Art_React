@@ -1,6 +1,4 @@
-import MergedArr from '../portfolio/MergedArr';
-
-export default function Search(text, findImg) {
+export default function Search(text, findImg, imgArr) {
 
 
     if (text.length < 3) {
@@ -8,16 +6,16 @@ export default function Search(text, findImg) {
     }
     const regex = new RegExp(text, 'i');
 
-    for (let i = 0; i <= MergedArr.length -1; i++) {
+    for (let i = 0; i <= imgArr.length -1; i++) {
 
-        if (regex.test(MergedArr[i].title)) {
-            findImg(MergedArr[i]);
+        if (regex.test(imgArr[i].title)) {
+            findImg(imgArr[i]);
 
-        } else if (regex.test(MergedArr[i].sciName)) {
-            findImg(MergedArr[i]);
+        } else if (regex.test(imgArr[i].sciName)) {
+            findImg(imgArr[i]);
 
-        } else if (regex.test(MergedArr[i].description)) {
-            findImg(MergedArr[i]);
+        } else if (regex.test(imgArr[i].description)) {
+            findImg(imgArr[i]);
         }
 
     }

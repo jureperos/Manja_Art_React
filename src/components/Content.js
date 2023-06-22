@@ -4,7 +4,6 @@ import './Content.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Home from './Home';
-import SetImages from "./portfolio/SetImages";
 import PortfolioLayout from "./portfolio/PortfolioLayout";
 import Zivljenjepis from "./Zivljenjepis";
 import NaprodajLayout from "./NaprodajLayout";
@@ -19,7 +18,7 @@ import OstaloArr from './portfolio/OstaloArr';
 import NaprodajArr from './portfolio/NaprodajArr';
 import BlogRoute from "./blog/BlogRoute";
 import DigitalnaArr from "./portfolio/DigitalnaArr";
-
+import MergedArr from "./portfolio/MergedArr";
 
 function Content () {
     return (
@@ -32,13 +31,16 @@ function Content () {
 
                     <Route
                     index element={ 
-                        <ImageHandler/>
+                        <ImageHandler
+                        imgArr={MergedArr}
+                        height={200}
+                        />
                     } />
 
                     <Route 
                     path="rastline" 
                     element={ 
-                        <SetImages 
+                        <ImageHandler 
                         imgArr={RastlineArr}
                         height={220}
                         /> 
@@ -47,7 +49,7 @@ function Content () {
                     <Route 
                     path="zivali" 
                     element={ 
-                        <SetImages 
+                        <ImageHandler 
                         imgArr={ZivaliArr}
                         height={200}
                         frameNum={"frame-num"} 
@@ -57,7 +59,7 @@ function Content () {
                     <Route 
                     path="portreti" 
                     element={ 
-                        <SetImages 
+                        <ImageHandler 
                         imgArr={PortretiArr}
                         height={200}
                         /> 
@@ -66,7 +68,7 @@ function Content () {
                     <Route 
                             path="digital" 
                             element={ 
-                              <SetImages 
+                              <ImageHandler 
                                 imgArr={DigitalnaArr}
                                 height={200}/> 
                             } 
@@ -74,7 +76,7 @@ function Content () {
                     <Route  
                     path="ostalo" 
                     element={
-                        <SetImages 
+                        <ImageHandler 
                         imgArr={OstaloArr}
                         height={200}
                         frameNum={"frame-num"}
@@ -85,7 +87,7 @@ function Content () {
                 <Route path="/naprodaj" element={ <NaprodajLayout /> }>
                     <Route 
                     index element={ 
-                        <SetImages 
+                        <ImageHandler 
                         imgArr={NaprodajArr}
                         height={200}
                         frameNum={"frame-num"}/> 
