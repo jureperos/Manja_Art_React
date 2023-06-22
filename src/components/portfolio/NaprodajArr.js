@@ -1,6 +1,5 @@
 const NaprodajArr = [
     {
-        index: 0,
         src: require('./assets/rastline/2 Iris illyrica.jpg'),
         title: 'Ilirska perunika 2017',
         sciName: 'Iris illyrica',
@@ -11,7 +10,6 @@ const NaprodajArr = [
 
     },
     {
-        index: 1,
         src: require('./assets/rastline/Olea_europaea.png'),
         title: 'Oljka 2021',
         sciName: 'Olea europaea',
@@ -22,7 +20,6 @@ const NaprodajArr = [
 
     },
     {
-        index: 2,
         src: require('./assets/Ostalo/lino.jpg'),
         title: 'Navadna bodika 2022',
         sciName: 'Ilex aquifolium',
@@ -33,7 +30,6 @@ const NaprodajArr = [
 
     },
     {
-        index: 3,
         src: require('./assets/portreti/lisica.jpg'),
         title: 'Navadna lisica 2021',
         sciName: 'Vulpes vulpes',
@@ -44,7 +40,6 @@ const NaprodajArr = [
 
     },
     {
-        index: 4,
         src: require('./assets/Ostalo/zvezdna_noc.png'),
         title: 'Zvezdna noč 2020',
         description: 'Reprodukcija slike Zvezdna noč (slikar Vincent van Gogh). Medij akrilne barve.',
@@ -54,7 +49,6 @@ const NaprodajArr = [
 
     },
     {
-        index: 5,
         src: require('./assets/Ostalo/6_na_dan.png'),
         title: '6 na dan 2023',
         description: 'Na voljo kot print',
@@ -63,7 +57,6 @@ const NaprodajArr = [
         price: '10 €'
     },
     {
-        index: 6,
         src: require('./assets/Ostalo/vrata_kopra.png'),
         title: 'Vrata Kopra 2022',
         description: 'Vrata Kopra',
@@ -72,7 +65,6 @@ const NaprodajArr = [
         price: '100 €'
     },
     {
-        index: 7,
         src: require('./assets/Ostalo/cvet_med_cvetovi.png'),
         title: 'Cvet med cvetovi 2022',
         description: 'Cvet med cvetovi',

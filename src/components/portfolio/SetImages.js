@@ -19,13 +19,14 @@ function SetImages (props) {
     return (
         <> 
             <div className={`all-img-container ${props.frameNum}`}>
-                {props.imgArr.map((image) => {
+                {props.imgArr.map((image, index) => {
                     return (
                         <div 
+                        key={image.src} 
                         className='img-container'
                         onClick={
                             () => {
-                                setCurrIndex(image.index);
+                                setCurrIndex(index);
                                 setLboxUnmounted(false)
                             }
                         }>
