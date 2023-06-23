@@ -93,14 +93,14 @@ const ZivaliArr = [
     {
         index: 13,
         src: require('./assets/zivali/pastir.jpeg'),
-        title: 'Kačji pastir',
-        sciName: '',
-        description: 'Kačji pastir. Medij akvarel.'
+        title: 'Modri ploščec',
+        sciName: 'Libellula depressa',
+        description: 'Modri ploščec. Medij akvarel.'
     },
     {
         index: 14,
         src: require('./assets/zivali/rega.jpeg'),
-        title: 'zelena rega',
+        title: 'Zelena rega',
         sciName: 'Hyla arborea',
         description: 'Zelena rega. Medij akvarel.'
     },
