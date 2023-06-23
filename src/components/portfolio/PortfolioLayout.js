@@ -32,6 +32,13 @@ function PortfolioLayout () {
 
                 </Link>
 
+                <Link to={'/portfolio/digital'}>
+                    <IconContext.Provider value={{ className: 'link-icon' }}>
+                        <IoIosCreate/>
+                    </IconContext.Provider>
+                    <p>Digitalna ilustracija</p>
+                </Link>
+
                 <Link to={'/portfolio/portreti'}>
                     <IconContext.Provider value={{ className: 'link-icon' }}>
                         <GiMonaLisa />
@@ -39,12 +46,6 @@ function PortfolioLayout () {
                     <p>Portreti</p>
                 </Link>
 
-                <Link to={'/portfolio/digital'}>
-                    <IconContext.Provider value={{ className: 'link-icon' }}>
-                        <IoIosCreate/>
-                    </IconContext.Provider>
-                    <p>Digitalna ilustracija</p>
-                </Link>
 
                 <Link to={'/portfolio/ostalo'} className='last-link'>
                     <IconContext.Provider value={{ className: 'link-icon' }}>
