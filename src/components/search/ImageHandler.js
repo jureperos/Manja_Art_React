@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Search from './search';
 import "./ImageHandler.css";
 import SetImages from '../portfolio/SetImages';
+import lupa from "./assets/lupa.png"
 
 const ImageHandler = ({imgArr, height, frameNum}) => {
     const [text, setText] = useState('');
@@ -39,11 +40,13 @@ const ImageHandler = ({imgArr, height, frameNum}) => {
     return (
         <div>
             <div className="input-ctn">
-                <input type="text" value={text} onChange={handleTextChange} onKeyDown={handleEnterKey} className="input-box"/>
-                    <button onClick={() => {
+                <input type="text" placeholder="Išči..." value={text} onChange={handleTextChange} onKeyDown={handleEnterKey} className="input-box"/>
+                    <button className="search-btn" onClick={() => {
                         setFoundImage([]);
                         handleSearchClick();
-                    }}> išči </button>
+                    }}>
+                        <img className="lupa-img" src={lupa} alt="lupa"/>
+                    </button>
             </div>
             <div>        
                  <SetImages
