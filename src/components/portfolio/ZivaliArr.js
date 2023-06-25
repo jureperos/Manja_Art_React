@@ -87,7 +87,7 @@ const ZivaliArr = [
         index: 12,
         src: require('./assets/zivali/drsalec.jpeg'),
         title: 'Vodni drsalec',
-        sciName: 'Gerridae',
+        sciName: 'Aquarius paludum',
         description: 'Vodni drsalec. Medij akvarel'
     },
     {
