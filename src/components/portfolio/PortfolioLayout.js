@@ -5,10 +5,9 @@ import {
     GiFox,
     GiMonaLisa
 } from 'react-icons/gi'
-import {BiPaintRoll} from 'react-icons/bi'
-import {IoMdImages} from 'react-icons/io'
+import {IoMdImages, IoIosCreate} from 'react-icons/io'
 import { IconContext } from "react-icons"
-import { useRef, useEffect } from 'react'
+import {BiSearchAlt2} from "react-icons/bi"
 
 
 function PortfolioLayout () {
@@ -17,7 +16,7 @@ function PortfolioLayout () {
         <>
             <div className="link-ctn">
                 <Link 
-                to={'/portfolio/rastline'}
+                    to={'/portfolio/rastline'}
                 >
                     <IconContext.Provider value={{ className: 'link-icon' }}>
                         <GiLotusFlower />
@@ -33,6 +32,13 @@ function PortfolioLayout () {
 
                 </Link>
 
+                <Link to={'/portfolio/digital'}>
+                    <IconContext.Provider value={{ className: 'link-icon' }}>
+                        <IoIosCreate/>
+                    </IconContext.Provider>
+                    <p>Digitalna ilustracija</p>
+                </Link>
+
                 <Link to={'/portfolio/portreti'}>
                     <IconContext.Provider value={{ className: 'link-icon' }}>
                         <GiMonaLisa />
@@ -40,12 +46,6 @@ function PortfolioLayout () {
                     <p>Portreti</p>
                 </Link>
 
-                <Link to={'/portfolio/linorez'}>
-                    <IconContext.Provider value={{ className: 'link-icon' }}>
-                        <BiPaintRoll />
-                    </IconContext.Provider>
-                    <p>Linorez</p>
-                </Link>
 
                 <Link to={'/portfolio/ostalo'} className='last-link'>
                     <IconContext.Provider value={{ className: 'link-icon' }}>

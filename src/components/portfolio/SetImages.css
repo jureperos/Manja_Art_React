@@ -51,18 +51,7 @@
     font-size: large;
 }
 
-/* lightbox captions styling */
-.yarl__slide_captions_container {
-    background: none !important;
-}
-
-.yarl__slide_image {
-    max-height: 420px !important;
-}
-
-
-
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
     .all-img-container {
         grid-template-columns: 1fr 1fr;
     }
@@ -82,7 +71,13 @@
     }
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (max-width: 1089px) {
+    .frame-num {
+        gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1090px) {
     .all-img-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
