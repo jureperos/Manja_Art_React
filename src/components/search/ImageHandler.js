@@ -40,7 +40,14 @@ const ImageHandler = ({imgArr, height, frameNum}) => {
     return (
         <div>
             <div className="input-ctn">
-                <input type="text" placeholder="Išči..." value={text} onChange={handleTextChange} onKeyDown={handleEnterKey} className="input-box"/>
+                <input 
+                    type="text" 
+                    placeholder="Išči..." 
+                    value={text} 
+                    onChange={handleTextChange} 
+                    onKeyDown={handleEnterKey} 
+                    className="input-box"/>
+
                     <button className="search-btn" onClick={() => {
                         setFoundImage([]);
                         handleSearchClick();

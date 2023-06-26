@@ -34,6 +34,7 @@ function Content () {
                         <ImageHandler
                         imgArr={MergedArr}
                         height={200}
+                        frameNum={"frame-num"}
                         />
                     } />
 

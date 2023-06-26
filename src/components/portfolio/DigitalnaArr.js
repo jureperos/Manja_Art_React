@@ -1,5 +1,23 @@
 const DigitalnaArr = [
     {
+        src: require('./assets/digital/krog_pupek.jpeg'),
+        title: 'Življenski krog repatih dvoživk',
+        description: 'Digitalna ilustracija',
+    },
+    
+    {
+        src: require('./assets/digital/krog_zaba.jpeg'),
+        title: 'Življenski krog brezrepih dvoživk',
+        description: 'Digitalna ilustracija',
+    },
+    
+    {
+        src: require('./assets/digital/tascica.jpeg'),
+        title: 'Taščica',
+        sciName: 'Erithacus rubecula',
+        description: 'Digitalna ilustracija',
+    },
+    {
         src: require('./assets/digital/oljka_digital.jpeg'),
         title: 'Oljka',
         description: 'Digitalna ilustracija',
@@ -21,7 +39,7 @@ const DigitalnaArr = [
     },
     {
         src: require('./assets/digital/jabolko.jpeg'),
-        title: 'Jabolko v mleku',
+        title: 'Jabolko in mleko',
         description: 'Digitalna ilustracija ',
     },
 ]
