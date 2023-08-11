@@ -5,6 +5,9 @@ function Zivljenjepis() {
         <>
             <h1 className='cv-title'>UMETNIŠKE IZKUŠNJE</h1>
             <ul className='cv-list'>
+
+                <li>2023: Občinsko glasilo <a href='https://obcina-ankaran.si/storage/doc/202306/%C4%8Dasopis-amfora-junij-za-splet.pdf' target={'_blank'}> Amfora</a> (Ankaran) o Tednu naravnih parkov in razstavi ilustracij</li>
+
                 <li>2023: Naročilo Krajinskega parka Goričko akvarelnih ilustracij različnih živalskih vrst</li>
 
                 <li>2022: Naročilo Krajinskega parka Goričko akvarelnih ilustracij gozdnih vrst ptic za opremljanje informativnih tabel</li>
@@ -48,6 +51,7 @@ function Zivljenjepis() {
 
             <h1 className='cv-title'>OSTALE IZKUŠNJE</h1>
             <ul className='cv-list'>
+                <li> Znanje v programu Procreate (digitalna ilustracija) </li>
                 <li>Osnovno znanje v programih Adobe Photoshop, Adobe Indesign in Adobe Illustrator</li>
 
                 <li>Osnovno znanje programa ArcGIS in QGIS</li>
