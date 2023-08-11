@@ -52,7 +52,24 @@ const NaprodajArr = [
         medium: 'Linorez + akrilni markerji (na voljo kot print)',
         dimensions: '9 x 11 cm',
         price: '15 €',
-
+    },
+    {
+        src: require('./assets/naprodaj/nalepka_tascica.jpeg'),
+        title: 'tascica_nalepka',
+        dimensions: '5 x 5 cm',
+        price: '3 €',
+    },
+    {
+        src: require('./assets/naprodaj/nalepka_metulj.jpeg'),
+        title: 'metulj_nalepka',
+        dimensions: '7.6 x 4.2 cm',
+        price: '3 €',
+    },
+    {
+        src: require('./assets/naprodaj/magnet_iris.jpeg'),
+        title: 'iris magnet',
+        dimensions: '5.5 x 7.6 cm',
+        price: '5 €',
     },
 ]
 
