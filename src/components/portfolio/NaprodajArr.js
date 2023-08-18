@@ -1,5 +1,14 @@
 const NaprodajArr = [
     {
+        src: require('./assets/rastline/Ranunculus_acris.jpeg'),
+        title: 'Ripeča zlatica 2023',
+        sciName: 'Ranunculus acris',
+        description: 'Ripeča zlatica. Medij akvarel in ink',
+        medium: 'Akvarel in ink',
+        dimensions: '26 x 36 cm',
+        price: '150 €'
+    },
+    {
         src: require('./assets/rastline/2 Iris illyrica.jpg'),
         title: 'Ilirska perunika 2017',
         sciName: 'Iris illyrica',
@@ -54,20 +63,26 @@ const NaprodajArr = [
         price: '15 €',
     },
     {
-        src: require('./assets/naprodaj/nalepka_tascica.jpeg'),
-        title: 'tascica_nalepka',
+        src: require('./assets/naprodaj/nalepka_tascica.png'),
+        title: 'Taščica',
+        sciName: 'Erithacus rubecula',
+        medium: 'Nalepka',
         dimensions: '5 x 5 cm',
         price: '3 €',
     },
     {
-        src: require('./assets/naprodaj/nalepka_metulj.jpeg'),
-        title: 'metulj_nalepka',
+        src: require('./assets/naprodaj/nalepka_monarh.png'),
+        title: 'Monarh',
+        sciName: 'Danaus plexippus',
+        medium: 'Prozorna nalepka',
         dimensions: '7.6 x 4.2 cm',
         price: '3 €',
     },
     {
-        src: require('./assets/naprodaj/magnet_iris.jpeg'),
-        title: 'iris magnet',
+        src: require('./assets/naprodaj/magnet_iris.png'),
+        title: 'Ilirska perunika',
+        sciName: 'Iris illyrica',
+        medium: 'Magnetek',
         dimensions: '5.5 x 7.6 cm',
         price: '5 €',
     },
