@@ -4,7 +4,7 @@ const DigitalnaArr = [
         title: 'Življenski krog repatih dvoživk',
         description: 'Digitalna ilustracija',
     },
-    
+
     {
         src: require('./assets/digital/krog_zaba.jpeg'),
         title: 'Življenski krog brezrepih dvoživk',
@@ -16,7 +16,7 @@ const DigitalnaArr = [
         sciName: 'Danaus plexippus',
         description: 'Digitalna ilustracija ',
     },
-    
+
     {
         src: require('./assets/digital/tascica.jpeg'),
         title: 'Taščica',
@@ -37,11 +37,6 @@ const DigitalnaArr = [
         src: require('./assets/digital/lilija.jpeg'),
         title: 'Lilija',
         description: 'Digitalna ilustracija',
-    },
-    {
-        src: require('./assets/digital/pomarancha.jpeg'),
-        title: 'Pomaranča',
-        description: 'Digitalna ilustracija ',
     },
     {
         src: require('./assets/digital/jabolko.jpeg'),

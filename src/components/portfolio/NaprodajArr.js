@@ -46,14 +46,6 @@ const NaprodajArr = [
         price: '80 €'
     },
     {
-        src: require('./assets/Ostalo/6_na_dan.png'),
-        title: '6 na dan 2023',
-        description: 'Na voljo kot print',
-        medium: 'Gvaš (na voljo kot print)',
-        dimensions: 'A5 format',
-        price: '10 €'
-    },
-    {
         src: require('./assets/Ostalo/lino.jpg'),
         title: 'Navadna bodika 2022',
         sciName: 'Ilex aquifolium',
