@@ -4,3 +4,12 @@
     display: flex;
     justify-content: center;
 }
+
+.not-found-img {
+    height: 70vh;
+    width: auto;
+}
+
+.img-ctn {
+    text-align: center;
+}

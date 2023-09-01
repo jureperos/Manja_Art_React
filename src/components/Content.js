@@ -33,8 +33,8 @@ function Content () {
                     index element={ 
                         <ImageHandler
                         imgArr={MergedArr}
-                        height={200}
-                        frameNum={"frame-num"}
+                        height={180}
+                        frameNum={""}
                         />
                     } />
 
@@ -52,7 +52,7 @@ function Content () {
                     element={ 
                         <ImageHandler 
                         imgArr={ZivaliArr}
-                        height={200}
+                        height={180}
                         frameNum={"frame-num"} 
                         /> 
                     } />
@@ -62,24 +62,25 @@ function Content () {
                     element={ 
                         <ImageHandler 
                         imgArr={PortretiArr}
-                        height={200}
+                        height={180}
                         /> 
                     } />
 
                     <Route 
-                            path="digital" 
-                            element={ 
-                              <ImageHandler 
-                                imgArr={DigitalnaArr}
-                                height={200}/> 
-                            } 
-                        />
+                    path="digital" 
+                    element={ 
+                        <ImageHandler 
+                        imgArr={DigitalnaArr}
+                        height={180}
+                        /> 
+                    } />
+
                     <Route  
                     path="ostalo" 
                     element={
                         <ImageHandler 
                         imgArr={OstaloArr}
-                        height={200}
+                        height={180}
                         frameNum={"frame-num"}
                         /> 
                     } />

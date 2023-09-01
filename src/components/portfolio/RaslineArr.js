@@ -1,5 +1,11 @@
 const RastlineArr = [
     {
+        src: require('./assets/rastline/Gentiana_verna.jpeg'),
+        title: 'Spomladanski svišč',
+        sciName: 'Gentiana verna',
+        description: 'Navadna ciklama. Medij akvarel in ink, digitalno odzadje',
+    },
+    {
         src: require('./assets/rastline/navadna_ciklama.jpeg'),
         title: 'Navadna ciklama',
         sciName: 'Cyclamen purpurascens',

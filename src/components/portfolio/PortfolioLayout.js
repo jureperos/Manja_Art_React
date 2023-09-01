@@ -7,7 +7,6 @@ import {
 } from 'react-icons/gi'
 import {IoMdImages, IoIosCreate} from 'react-icons/io'
 import { IconContext } from "react-icons"
-import {BiSearchAlt2} from "react-icons/bi"
 
 
 function PortfolioLayout () {
