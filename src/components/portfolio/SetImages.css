@@ -63,7 +63,7 @@
 
 @media only screen and (min-width: 740px) {
     .all-img-container {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .frame-num {
@@ -79,7 +79,7 @@
 
 @media only screen and (min-width: 1090px) {
     .all-img-container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .frame-num {
@@ -89,7 +89,7 @@
 
 @media only screen and (min-width: 1300px) {
     .all-img-container {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .frame-num {
