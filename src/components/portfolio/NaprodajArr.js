@@ -1,5 +1,32 @@
 const NaprodajArr = [
     {
+        src: require('./assets/naprodaj/lilija.jpeg'),
+        title: 'Kranjska lilija 2023',
+        sciName: 'Lilium carniolicum',
+        description: 'Kranjska lilija. Medij akvarel in ink',
+        medium: 'Akvarel in ink',
+        dimensions: '26 x 36 cm',
+        price: '150 €'
+    },
+    {
+        src: require('./assets/naprodaj/gentiana.jpeg'),
+        title: 'Spomladanski svišč 2023',
+        sciName: 'Gentiana verna',
+        description: 'Spomladanski svišč. Medij akvarel in ink',
+        medium: 'Akvarel in ink',
+        dimensions: '26 x 36 cm',
+        price: '150 €'
+    },
+    {
+        src: require('./assets/naprodaj/iris.jpeg'),
+        title: 'Ilirska perunika 2023',
+        sciName: 'Iris illyrica',
+        description: 'Ilirska perunika. Medij akvarel in ink',
+        medium: 'Akvarel in ink',
+        dimensions: '26 x 36 cm',
+        price: '150 €'
+    },
+    {
         src: require('./assets/rastline/Ranunculus_acris.jpeg'),
         title: 'Ripeča zlatica 2023',
         sciName: 'Ranunculus acris',

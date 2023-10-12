@@ -1,9 +1,21 @@
 const RastlineArr = [
     {
-        src: require('./assets/rastline/Gentiana_verna.jpeg'),
+        src: require('./assets/rastline/kranjska_lilija_odzadje.jpg'),
+        title: 'Kranjska lilija',
+        sciName: 'Lilium carniolicum',
+        description: 'Kranjska lilija. Medij akvarel in ink, digitalno odzadje',
+    },
+    {
+        src: require('./assets/rastline/ilirska_perunika_odzadje.jpg'),
+        title: 'Ilirska perunika',
+        sciName: 'Iris illyrica',
+        description: 'Ilirska perunika. Medij akvarel in ink, digitalno odzadje',
+    },
+    {
+        src: require('./assets/rastline/Gentiana_verna.jpg'),
         title: 'Spomladanski svišč',
         sciName: 'Gentiana verna',
-        description: 'Navadna ciklama. Medij akvarel in ink, digitalno odzadje',
+        description: 'Spomladanski svišč. Medij akvarel in ink, digitalno odzadje',
     },
     {
         src: require('./assets/rastline/navadna_ciklama.jpeg'),
