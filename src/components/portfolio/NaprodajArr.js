@@ -107,5 +107,4 @@ const NaprodajArr = [
     },
 ]
 
-
 export default NaprodajArr
