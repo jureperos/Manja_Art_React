@@ -1,5 +1,11 @@
 const RastlineArr = [
     {
+        src: require('./assets/rastline/Avrikelj.jpg'),
+        title: 'Avrikelj',
+        sciName: 'Primula auricula',
+        description: 'Avrikelj. Medij akvarel in ink',
+    },
+    {
         src: require('./assets/rastline/kranjska_lilija_odzadje.jpg'),
         title: 'Kranjska lilija',
         sciName: 'Lilium carniolicum',

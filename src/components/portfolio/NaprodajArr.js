@@ -1,5 +1,31 @@
 const NaprodajArr = [
     {
+        src: require('./assets/Ostalo/cebela_na_cvetu.jpeg'),
+        title: 'Slovo poletju',
+        description: 'Čebela na cvetu. Medij oljne barve na tankem platnu.',
+        medium: 'Medij oljne barve na tankem platnu',
+        dimensions: '14.5 x 20 cm',
+        price: '100 €'
+    },
+    {
+        src: require('./assets/zivali/kalin_na_veji.jpeg'),
+        title: 'Kalin na veji',
+        sciName: 'Pyrrhula Pyrrhula',
+        description: 'Kalin na veji. Medij suhi pasteli',
+        medium: 'Suhi pasteli',
+        dimensions: '13.5 x 22.5 cm',
+        price: '120 €'
+    },
+    {
+        src: require('./assets/rastline/Avrikelj.jpg'),
+        title: 'Avrikelj',
+        sciName: 'Primula auricula',
+        description: 'Avrikelj. Medij akvarel in ink',
+        medium: 'Akvarel in ink',
+        dimensions: 'A4',
+        price: '150 €'
+    },
+    {
         src: require('./assets/naprodaj/lilija.jpeg'),
         title: 'Kranjska lilija 2023',
         sciName: 'Lilium carniolicum',
