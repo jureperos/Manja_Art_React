@@ -1,7 +1,7 @@
 const NaprodajArr = [
     {
         src: require('./assets/Ostalo/cebela_na_cvetu.jpeg'),
-        title: 'Slovo poletju',
+        title: 'Slovo poletju 2023',
         description: 'Čebela na cvetu. Medij oljne barve na tankem platnu.',
         medium: 'Medij oljne barve na tankem platnu',
         dimensions: '14.5 x 20 cm',
@@ -9,7 +9,7 @@ const NaprodajArr = [
     },
     {
         src: require('./assets/zivali/kalin_na_veji.jpeg'),
-        title: 'Kalin na veji',
+        title: 'Kalin na veji 2023',
         sciName: 'Pyrrhula Pyrrhula',
         description: 'Kalin na veji. Medij suhi pasteli',
         medium: 'Suhi pasteli',
@@ -18,7 +18,7 @@ const NaprodajArr = [
     },
     {
         src: require('./assets/rastline/Avrikelj.jpg'),
-        title: 'Avrikelj',
+        title: 'Avrikelj 2023',
         sciName: 'Primula auricula',
         description: 'Avrikelj. Medij akvarel in ink',
         medium: 'Akvarel in ink',
@@ -31,7 +31,7 @@ const NaprodajArr = [
         sciName: 'Lilium carniolicum',
         description: 'Kranjska lilija. Medij akvarel in ink',
         medium: 'Akvarel in ink',
-        dimensions: '26 x 36 cm',
+        dimensions: 'A4',
         price: '150 €'
     },
     {
@@ -40,7 +40,7 @@ const NaprodajArr = [
         sciName: 'Gentiana verna',
         description: 'Spomladanski svišč. Medij akvarel in ink',
         medium: 'Akvarel in ink',
-        dimensions: '26 x 36 cm',
+        dimensions: 'A4',
         price: '150 €'
     },
     {
@@ -49,7 +49,7 @@ const NaprodajArr = [
         sciName: 'Iris illyrica',
         description: 'Ilirska perunika. Medij akvarel in ink',
         medium: 'Akvarel in ink',
-        dimensions: '26 x 36 cm',
+        dimensions: 'A4',
         price: '150 €'
     },
     {
