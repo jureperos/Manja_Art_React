@@ -22,7 +22,7 @@ const NaprodajArr = [
         sciName: 'Primula auricula',
         description: 'Avrikelj. Medij akvarel in ink',
         medium: 'Akvarel in ink',
-        dimensions: 'A4',
+        dimensions: '22 x 30 cm',
         price: '150 €'
     },
     {
