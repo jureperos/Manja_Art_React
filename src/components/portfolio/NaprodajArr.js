@@ -2,8 +2,8 @@ const NaprodajArr = [
     {
         src: require('./assets/Ostalo/cebela_na_cvetu.jpeg'),
         title: 'Slovo poletju 2023',
-        description: 'Čebela na cvetu. Medij oljne barve na tankem platnu.',
-        medium: 'Medij oljne barve na tankem platnu',
+        description: 'Slovo poletju. Medij oljne barve na tankem platnu.',
+        medium: 'Oljne barve na tankem platnu',
         dimensions: '14.5 x 20 cm',
         price: '100 €'
     },
@@ -31,7 +31,7 @@ const NaprodajArr = [
         sciName: 'Lilium carniolicum',
         description: 'Kranjska lilija. Medij akvarel in ink',
         medium: 'Akvarel in ink',
-        dimensions: 'A4',
+        dimensions: '23 x 30 cm',
         price: '150 €'
     },
     {
@@ -40,7 +40,7 @@ const NaprodajArr = [
         sciName: 'Gentiana verna',
         description: 'Spomladanski svišč. Medij akvarel in ink',
         medium: 'Akvarel in ink',
-        dimensions: 'A4',
+        dimensions: '18 x 25 cm',
         price: '150 €'
     },
     {
@@ -49,7 +49,7 @@ const NaprodajArr = [
         sciName: 'Iris illyrica',
         description: 'Ilirska perunika. Medij akvarel in ink',
         medium: 'Akvarel in ink',
-        dimensions: 'A4',
+        dimensions: '18 x 25 cm',
         price: '150 €'
     },
     {

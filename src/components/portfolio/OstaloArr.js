@@ -1,8 +1,8 @@
 const OstaloArr = [
     {
         src: require('./assets/Ostalo/cebela_na_cvetu.jpeg'),
-        title: 'Čebela na cvetu',
-        description: 'Čebela na cvetu. Medij oljne barve na tankem platnu.',
+        title: 'Slovo poletju',
+        description: 'Slovo poletju. Medij oljne barve na tankem platnu.',
     },
     {
         src: require('./assets/Ostalo/buca.jpg'),
