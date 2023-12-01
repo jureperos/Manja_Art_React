@@ -10,19 +10,36 @@ import { useState } from 'react';
 function SetImages (props) {
     const [currIndex, setCurrIndex] = useState(0);
     const [lboxUnmounted, setLboxUnmounted] = useState(true);
-  
+
     //call this from MyLightbox to indicate the component unmounted
     function handleLboxUnmount() {
         setLboxUnmounted(true);
     }
 
+    //Christmass disckount
+    function discount(string) {
+        if (!string) {
+            return
+        }
+        const regex = new RegExp("^\\S+\\s")
+        const match = regex.exec(string)
+
+        const ogPrice = parseInt(match[0])
+        const newPrice = Math.floor(ogPrice * 0.8)
+        const newPriceString = newPrice + "€"
+        return newPriceString
+
+    }
+
+    discount("opica in kmet")
+
     return (
-        <> 
+        <>
             <div className={`all-img-container ${props.frameNum}`}>
                 {props.imgArr.map((image, index) => {
                     return (
-                        <div 
-                        key={image.src} 
+                        <div
+                        key={image.src}
                         className='img-container'
                         onClick={
                             () => {
@@ -30,7 +47,7 @@ function SetImages (props) {
                                 setLboxUnmounted(false)
                             }
                         }>
-                            <LazyLoadImage 
+                            <LazyLoadImage
                                 height={props.height}
                                 alt={ image.title }
                                 src={ image.src }
@@ -41,7 +58,7 @@ function SetImages (props) {
                                 <p className='img-descr top-descr'> {image.title} <br/> <em>{image.sciName}</em> </p>
                                 <p className='img-descr'> {image.medium} </p>
                                 <p className='img-descr'> {image.dimensions} </p>
-                                <p className='img-descr img-price'> {image.price} </p>
+                                <p className='img-descr img-price'><span style={{textDecoration: 'line-through'}}>{image.price}</span> <span>{discount(image.price)}</span> </p>
                             </div>
                         </div>
                     )
@@ -49,14 +66,14 @@ function SetImages (props) {
 
                 {!lboxUnmounted && <MyLightbox
                         imgData={props}
-                        currIndex={currIndex} 
+                        currIndex={currIndex}
                         onUnmount={handleLboxUnmount}
                         mountState={lboxUnmounted}
                 />}
 
             </div>
         </>
-          
+
     )
 }
 
