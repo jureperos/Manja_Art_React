@@ -1,5 +1,15 @@
 const DigitalnaArr = [
     {
+        src: require('./assets/digital/monarh_gosenica.jpg'),
+        title: 'Gosenica monarha (Danaus plexippus)',
+        description: 'Digitalna ilustracija',
+    },
+    {
+        src: require('./assets/digital/monarh_naveji.jpg'),
+        title: 'Monarh metulj (Danaus plexippus)',
+        description: 'Digitalna ilustracija',
+    },
+    {
         src: require('./assets/digital/krog_pupek.jpeg'),
         title: 'Življenski krog repatih dvoživk',
         description: 'Digitalna ilustracija',

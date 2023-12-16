@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import NotFound from "../NotFound";
-import BlogArr from "./BlogArr";
+import {BlogArr} from "./BlogArr";
 
 function BlogRoute() {
     const routeBlogId = useParams()

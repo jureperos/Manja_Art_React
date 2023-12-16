@@ -11,7 +11,7 @@ import img10 from './10.jpg'
 import './Blog_2.css'
 import '../common-styles.css'
 
-function Blog_2() {
+function Blog2() {
     return (
         <div className='blog-ctn'>
             <div className='blog-head'>
@@ -19,13 +19,13 @@ function Blog_2() {
                 <div className="blog-datum">Četrtek, 18.5.2023</div>
             </div>
 
-                
+
             <div className='txt-2'>
                 <p>Barve v paleti oziroma set lahko kupimo že vnaprej, lahko pa kupimo paleto in dodamo barve, ki jih mi želimo. Plastične palete so izredno poceni in to katero bom uporabila v tem blogu sem kupila v trgovini Pri levčku. Paleta je stala le 5.2 € in skupno ima 28 prostorčkov za barvo. Ta paleta mi bo služila za botanične ilustracije, kar se tudi odraža pri izbranih barvah.</p>
                 <img src={img1} className='bl2-img'/>
 
                 <p>Iz izbranih barv naredim barvne vzorce, da se tako lažje odločim, če mi barve ustrezajo.  Barve sproti tudi mešam, tako vidim kaj mi paleta ponuja. Nato premislim kakšen bi bil vrstni red barv na paleti. </p>
-                <div className='bl2-img-ctn'> 
+                <div className='bl2-img-ctn'>
                     <img src={img2}/>
                     <img src={img3}/>
                 </div>
@@ -47,9 +47,9 @@ function Blog_2() {
                 <img src={img8}/>
 
                 <p>Ko se barve posušijo niso enake barvi katero aktiviramo in z njo rišemo. Zato priporočam, da na papir naredite barvne vzorce in jih dodate v paleto. Tako boste vedno vedeli kako določena barva izgleda preden boste po njej posegli. </p>
-                
-                
-                <div className='bl2-img-ctn'> 
+
+
+                <div className='bl2-img-ctn'>
                     <img src={img9}/>
                     <img src={img10}/>
                 </div>
@@ -59,4 +59,4 @@ function Blog_2() {
     )
 }
 
-export default Blog_2
+export default Blog2

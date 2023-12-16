@@ -1,5 +1,29 @@
 const ZivaliArr = [
     {
+        src: require('./assets/zivali/bober.jpg'),
+        title: 'Bober',
+        sciName: 'Castor fiber',
+        description: 'Bober. Medij suhi pasteli'
+    },
+    {
+        src: require('./assets/zivali/nutrija.jpg'),
+        title: 'Nutrija',
+        sciName: 'Myocastor coypus',
+        description: 'Nutrija. Medij suhi pasteli'
+    },
+    {
+        src: require('./assets/zivali/pizmovka.jpg'),
+        title: 'Pižmovka',
+        sciName: 'Ondatra zibethicus',
+        description: 'Pižmovka. Medij suhi pasteli'
+    },
+    {
+        src: require('./assets/zivali/vidra.jpg'),
+        title: 'Vidra',
+        sciName: 'Lutra lutra',
+        description: 'Vidra. Medij suhi pasteli'
+    },
+    {
         src: require('./assets/zivali/kalin_na_veji.jpeg'),
         title: 'Kalin na veji',
         sciName: 'Pyrrhula Pyrrhula',

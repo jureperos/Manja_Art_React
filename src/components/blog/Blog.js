@@ -1,5 +1,5 @@
 import BlogLinks from './blogLinks/BlogLinks'
-import BlogArr from './BlogArr'
+import {BlogArr} from './BlogArr'
 import './Blog.css';
 import blogImg from './blog_intro.png';
 
