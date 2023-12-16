@@ -6,7 +6,7 @@ import './Blog_1.css'
 import '../common-styles.css'
 
 
-function Blog_1() {
+function Blog1() {
     return (
         <div className='blog-ctn'>
             <div className='blog-head'>
@@ -30,7 +30,7 @@ function Blog_1() {
                 <p>Čeprav nas mikajo cenovno bolj ugodne barve, sploh ko smo na začetku ali pa bi se mogoče le sprobali v risanju, pa vseeno priporočam za nakup kvalitetnih barv, ker lahko le s tremi barvami namešamo skoraj vse kar želimo (rumena, magenta in cian barva kot primarne barve). Pri akvarelnem risanju se prav tako ne uporablja bele barve, čisto črno pa uporabljamo bolj redko. Nakup treh barv nam tako ne bo predstavljal velik začetni strošek in naučili se bomo veliko o mešanju barv in barvni teoriji. Kasneje pa lahko svojo paleto razširimo po našem okusu.</p>
                 <p>Večinoma se pričakuje, da imajo priznane znamke naveden t.i. ’Barvni indeks generično ime’ (=Pigment C.I. generic name) barve, ki kupujemo. Ta barvni indeks je le standardiziran sistem proizvajalcev in potrošnikov za identifikacijo barv. Te so združene v skupine glede na njihovo kemično sestavo. Kot primer: če želimo kupiti ultramarin modro, vemo da je le-ta kategoriziran kot PB29 (P = pigment, B = blue, in sledeča številka je le kronološki vrstni red registracije v indeksu). Na tak način vemo, da bomo vedno kupili isti pigment, ne glede na to od katerega proizvajalca bo. Če pigment ni naveden na tubi potem odpriporočam nakup.</p>
 
-                <div className="blog_1-img-descr-ctn">    
+                <div className="blog_1-img-descr-ctn">
                     <img src={img_2} alt="Permanent Alizarin Crimson" className="blog_1-img_2" />
                     <p className="blog_1-img_2-description">Slika 2: Primer barvnega indeksa na tubi barve Permanent Alizarin Crimson (PR 177, PV 19, PR 149).</p>
                 </div>
@@ -68,4 +68,4 @@ function Blog_1() {
     )
 }
 
-export default Blog_1
+export default Blog1

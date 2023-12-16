@@ -107,30 +107,6 @@ const NaprodajArr = [
         dimensions: '9 x 11 cm',
         price: '15 €',
     },
-    {
-        src: require('./assets/naprodaj/nalepka_tascica.png'),
-        title: 'Taščica',
-        sciName: 'Erithacus rubecula',
-        medium: 'Nalepka',
-        dimensions: '5 x 5 cm',
-        price: '3 €',
-    },
-    {
-        src: require('./assets/naprodaj/nalepka_monarh.png'),
-        title: 'Monarh',
-        sciName: 'Danaus plexippus',
-        medium: 'Prozorna nalepka',
-        dimensions: '7.6 x 4.2 cm',
-        price: '3 €',
-    },
-    {
-        src: require('./assets/naprodaj/magnet_iris.png'),
-        title: 'Ilirska perunika',
-        sciName: 'Iris illyrica',
-        medium: 'Magnetek',
-        dimensions: '5.5 x 7.6 cm',
-        price: '5 €',
-    },
 ]
 
 export default NaprodajArr

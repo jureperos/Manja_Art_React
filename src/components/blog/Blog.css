@@ -65,15 +65,7 @@
     .blog-content{
         background: linear-gradient(to right, #A49E9E 40px, #ededed 40px 100%);
     }
-        
-}
 
-@media only screen and (min-width:1200px) {
-    .blog-link-elements {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        margin: 0 5%;
-    }
 }
 
 @media only screen and (min-width:1400px) {

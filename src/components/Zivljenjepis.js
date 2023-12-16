@@ -5,9 +5,11 @@ function Zivljenjepis() {
         <>
             <h1 className='cv-title'>UMETNIŠKE IZKUŠNJE</h1>
             <ul className='cv-list'>
+                <li>2023 - 2024: Naročilo Prirodoslovnega muzeja Slovenije ilustracij različnih živalskih in rastlinskih vrst ter pokrajin</li>
 
-                <li>2023: Objava v reviji <a href='https://issuu.com/kulturalist/docs/kulturalist_10_final_3_
-4m' target={'_blank'}> Kulturalist </a>o sredozemskem slanem travniku in ilustracijah  </li>
+                <li>2023: Naročilo Prirodoslovnega muzeja Slovenije ilustracij živalskih vrst</li>
+
+                <li>2023: Objava v reviji <a href='https://issuu.com/kulturalist/docs/kulturalist_10_final_3_4m' target={'_blank'}> Kulturalist </a>o sredozemskem slanem travniku in ilustracijah  </li>
 
                 <li>2023: Občinsko glasilo <a href='https://obcina-ankaran.si/storage/doc/202306/%C4%8Dasopis-amfora-junij-za-splet.pdf' target={'_blank'}> Amfora</a> (Ankaran) o Tednu naravnih parkov in razstavi ilustracij</li>
 
