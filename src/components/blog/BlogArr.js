@@ -9,7 +9,7 @@ export const BlogArr = [
     {
         blogId: 'blog3',
         img: require('./blog_3/jacksons_img.jpg'),
-        title: 'Moji materiali',
+        title: 'Partnerski program',
         date: 'Sobota, 16.12.2023',
         introText: introTxt.text3,
         component: <Blog3 />

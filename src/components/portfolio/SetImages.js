@@ -16,23 +16,6 @@ function SetImages (props) {
         setLboxUnmounted(true);
     }
 
-    //Christmass disckount
-    function discount(string) {
-        if (!string) {
-            return
-        }
-        const regex = new RegExp("^\\S+\\s")
-        const match = regex.exec(string)
-
-        const ogPrice = parseInt(match[0])
-        const newPrice = Math.floor(ogPrice * 0.8)
-        const newPriceString = newPrice + "€"
-        return newPriceString
-
-    }
-
-    discount("opica in kmet")
-
     return (
         <>
             <div className={`all-img-container ${props.frameNum}`}>
@@ -58,7 +41,7 @@ function SetImages (props) {
                                 <p className='img-descr top-descr'> {image.title} <br/> <em>{image.sciName}</em> </p>
                                 <p className='img-descr'> {image.medium} </p>
                                 <p className='img-descr'> {image.dimensions} </p>
-                                <p className='img-descr img-price'><span style={{textDecoration: 'line-through'}}>{image.price}</span> <span>{discount(image.price)}</span> </p>
+                                <p className='img-descr img-price'><span>{image.price}</span> </p>
                             </div>
                         </div>
                     )

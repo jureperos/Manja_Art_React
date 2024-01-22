@@ -1,12 +1,14 @@
 const DigitalnaArr = [
     {
         src: require('./assets/digital/monarh_gosenica.jpg'),
-        title: 'Gosenica monarha (Danaus plexippus)',
+        title: 'Gosenica monarha',
+        sciName: 'Danaus plexippus',
         description: 'Digitalna ilustracija',
     },
     {
         src: require('./assets/digital/monarh_naveji.jpg'),
-        title: 'Monarh metulj (Danaus plexippus)',
+        title: 'Monarh metulj',
+        sciName: 'Danaus plexippus',
         description: 'Digitalna ilustracija',
     },
     {
