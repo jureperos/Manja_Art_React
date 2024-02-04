@@ -1,6 +1,8 @@
-const NaprodajArr = [
+import { NaprodajInterface } from "./arrayInterface"
+
+const NaprodajArr: Array<NaprodajInterface> = [
     {
-        src: require('./assets/Ostalo/cebela_na_cvetu.jpeg'),
+        src: '/assets/Ostalo/cebela_na_cvetu.jpeg',
         title: 'Slovo poletju 2023',
         description: 'Slovo poletju. Medij oljne barve na tankem platnu.',
         medium: 'Oljne barve na tankem platnu',
@@ -8,7 +10,7 @@ const NaprodajArr = [
         price: '100 €'
     },
     {
-        src: require('./assets/zivali/kalin_na_veji.jpeg'),
+        src: '/assets/zivali/kalin_na_veji.jpeg',
         title: 'Kalin na veji 2023',
         sciName: 'Pyrrhula Pyrrhula',
         description: 'Kalin na veji. Medij suhi pasteli',
@@ -17,7 +19,7 @@ const NaprodajArr = [
         price: '120 €'
     },
     {
-        src: require('./assets/rastline/Avrikelj.jpg'),
+        src: '/assets/rastline/Avrikelj.jpg',
         title: 'Avrikelj 2023',
         sciName: 'Primula auricula',
         description: 'Avrikelj. Medij akvarel in ink',
@@ -26,7 +28,7 @@ const NaprodajArr = [
         price: '150 €'
     },
     {
-        src: require('./assets/naprodaj/lilija.jpeg'),
+        src: '/assets/naprodaj/lilija.jpeg',
         title: 'Kranjska lilija 2023',
         sciName: 'Lilium carniolicum',
         description: 'Kranjska lilija. Medij akvarel in ink',
@@ -35,7 +37,7 @@ const NaprodajArr = [
         price: '150 €'
     },
     {
-        src: require('./assets/naprodaj/gentiana.jpeg'),
+        src: '/assets/naprodaj/gentiana.jpeg',
         title: 'Spomladanski svišč 2023',
         sciName: 'Gentiana verna',
         description: 'Spomladanski svišč. Medij akvarel in ink',
@@ -44,7 +46,7 @@ const NaprodajArr = [
         price: '150 €'
     },
     {
-        src: require('./assets/naprodaj/iris.jpeg'),
+        src: '/assets/naprodaj/iris.jpeg',
         title: 'Ilirska perunika 2023',
         sciName: 'Iris illyrica',
         description: 'Ilirska perunika. Medij akvarel in ink',
@@ -53,7 +55,7 @@ const NaprodajArr = [
         price: '150 €'
     },
     {
-        src: require('./assets/rastline/Ranunculus_acris.jpeg'),
+        src: '/assets/rastline/Ranunculus_acris.jpeg',
         title: 'Ripeča zlatica 2023',
         sciName: 'Ranunculus acris',
         description: 'Ripeča zlatica. Medij akvarel in ink',
@@ -62,7 +64,7 @@ const NaprodajArr = [
         price: '150 €'
     },
     {
-        src: require('./assets/rastline/2 Iris illyrica.jpg'),
+        src: '/assets/rastline/2 Iris illyrica.jpg',
         title: 'Ilirska perunika 2017',
         sciName: 'Iris illyrica',
         description: 'Neodprti cvetovi ilirske perunike.',
@@ -72,7 +74,7 @@ const NaprodajArr = [
 
     },
     {
-        src: require('./assets/rastline/Olea_europaea.png'),
+        src: '/assets/rastline/Olea_europaea.png',
         title: 'Oljka 2021',
         sciName: 'Olea europaea',
         description: 'Oljka',
@@ -82,7 +84,7 @@ const NaprodajArr = [
 
     },
     {
-        src: require('./assets/Ostalo/zvezdna_noc.png'),
+        src: '/assets/Ostalo/zvezdna_noc.png',
         title: 'Zvezdna noč 2020',
         description: 'Reprodukcija slike Zvezdna noč (slikar Vincent van Gogh). Medij akrilne barve.',
         medium: 'Akril na platnu',
@@ -91,7 +93,7 @@ const NaprodajArr = [
 
     },
     {
-        src: require('./assets/Ostalo/cvet_med_cvetovi.png'),
+        src: '/assets/Ostalo/cvet_med_cvetovi.png',
         title: 'Cvet med cvetovi 2022',
         description: 'Cvet med cvetovi',
         medium: 'Medij suhi pasteli',
@@ -99,7 +101,7 @@ const NaprodajArr = [
         price: '80 €'
     },
     {
-        src: require('./assets/Ostalo/lino.jpg'),
+        src: '/assets/Ostalo/lino.jpg',
         title: 'Navadna bodika 2022',
         sciName: 'Ilex aquifolium',
         description: 'Navadna bodika. Print na japonskem papirju. Printi se razlikujejo',

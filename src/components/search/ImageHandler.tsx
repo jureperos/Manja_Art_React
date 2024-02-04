@@ -2,9 +2,15 @@ import React, { useState, useEffect, useRef } from 'react';
 import Search from './search';
 import "./ImageHandler.css";
 import SetImages from '../portfolio/SetImages';
-import lupa from "./assets/lupa.png"
+import { ImageAttributes } from '../portfolio/arrayInterface';
 
-const ImageHandler = ({imgArr, height, frameNum}) => {
+type ImageHandlerProps = {
+    imgArr: Array<ImageAttributes>;
+    height: string;
+    frameNum: string
+}
+
+const ImageHandler = ({imgArr, height, frameNum}: ImageHandlerProps) => {
     const [text, setText] = useState('');
     const [foundImg, setFoundImage] = useState([]);
     const [isImageSearched, setIsImageSearched] = useState(false);
@@ -12,12 +18,12 @@ const ImageHandler = ({imgArr, height, frameNum}) => {
 
     const notFound = <h1 className='not-found'> Ni zadetkov! </h1>;
     const showImages = (
-            <div>        
+            <div>
                  <SetImages
-                 //check if searchArr is empty else show all results 
+                 //check if searchArr is empty else show all results
                  imgArr={(foundImg.length === 0) ? imgArr: foundImg}
                  height={height}
-                 frameNum={frameNum} 
+                 frameNum={frameNum}
                 />
             </div>
     );
@@ -26,7 +32,7 @@ const ImageHandler = ({imgArr, height, frameNum}) => {
     useEffect(() => {
         setText('');
         setFoundImage([]);
-    }, [imgArr]) 
+    }, [imgArr])
 
     /* this checks if search found images or the term is not found and
     triggers the notFound component */
@@ -42,15 +48,15 @@ const ImageHandler = ({imgArr, height, frameNum}) => {
         }
     }, [isImageSearched, foundImg])
 
-    const handleTextChange = (event) => {
-        setText(event.target.value);
+    const handleTextChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setText((event.target).value);
 
         if (text.length === 1) {
             setFoundImage([]);
         }
     };
 
-    const handleFoundImage = (foundArr) => {
+    const handleFoundImage = (foundArr: ImageAttributes) => {
         setFoundImage( (prevArr) => [...prevArr, foundArr]);
 
     };
@@ -60,17 +66,17 @@ const ImageHandler = ({imgArr, height, frameNum}) => {
         setIsImageSearched(true);
     };
 
-    const handleEnterKey = (event) => {
+    const handleEnterKey = (event: React.KeyboardEvent<HTMLInputElement>) => {
 
         if (event.key === 'Enter') {
             setFoundImage([]);
-            handleSearchClick(); 
+            handleSearchClick();
         }
         if (event.key === 'Enter' && text.length === 0) {
             setIsImageSearched(false);
         }
     };
-    
+
     const handleSearchIcon = () => {
         setFoundImage([]);
         handleSearchClick();
@@ -83,16 +89,16 @@ const ImageHandler = ({imgArr, height, frameNum}) => {
     return (
         <div>
             <div className="input-ctn">
-                <input 
-                    type="text" 
-                    placeholder="Išči..." 
-                    value={text} 
-                    onChange={handleTextChange} 
-                    onKeyDown={handleEnterKey} 
+                <input
+                    type="text"
+                    placeholder="Išči..."
+                    value={text}
+                    onChange={handleTextChange}
+                    onKeyDown={handleEnterKey}
                     className="input-box"/>
 
                     <button className="search-btn" onClick={handleSearchIcon}>
-                        <img className="lupa-img" src={lupa} alt="lupa"/>
+                        <img className="lupa-img" src='/misc_images/lupa.png' alt="lupa"/>
                     </button>
             </div>
             {searchFound.current ? showImages: notFound}
