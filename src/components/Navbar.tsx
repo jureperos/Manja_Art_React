@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import './Navbar.css';
-import { GoThreeBars } from 'react-icons/go';
+import { VscThreeBars } from "react-icons/vsc";
 import { IconContext } from 'react-icons';
 
 function Navbar() {
@@ -35,7 +35,7 @@ function Navbar() {
                     <button className="menu-button"
                     onClick={ function () { setMenuOpen(!menuOpen) }}>
                         <IconContext.Provider value={{ className: 'menu-icon' }}>
-                            <GoThreeBars />
+                            <VscThreeBars />
                         </IconContext.Provider>
                     </button>
                     <div className={`nav-list ${menuOpen ? 'open' : 'closed'} bigger-width`}>

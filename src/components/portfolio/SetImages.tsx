@@ -1,13 +1,13 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './SetImages.css';
-
+import { ImageHandlerProps } from '../search/ImageHandler';
 import MyLightbox from './lightbox/MyLightbox';
 
 import { useState } from 'react';
 
 
-function SetImages (props) {
+function SetImages (props: ImageHandlerProps) {
     const [currIndex, setCurrIndex] = useState(0);
     const [lboxUnmounted, setLboxUnmounted] = useState(true);
 
@@ -34,14 +34,18 @@ function SetImages (props) {
                                 height={props.height}
                                 alt={ image.title }
                                 src={ image.src }
-                                offset={ 100 }
                                 effect='blur'
                             />
                             <div className='img-text'>
                                 <p className='img-descr top-descr'> {image.title} <br/> <em>{image.sciName}</em> </p>
+                                {("medium" in image)?(
+                                <>
                                 <p className='img-descr'> {image.medium} </p>
                                 <p className='img-descr'> {image.dimensions} </p>
                                 <p className='img-descr img-price'><span>{image.price}</span> </p>
+                                </>
+                                )
+                                : false}
                             </div>
                         </div>
                     )

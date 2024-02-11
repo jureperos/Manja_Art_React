@@ -2,17 +2,17 @@ import React, { useState, useEffect, useRef } from 'react';
 import Search from './search';
 import "./ImageHandler.css";
 import SetImages from '../portfolio/SetImages';
-import { ImageAttributes } from '../portfolio/arrayInterface';
+import { ImageAttributes, NaprodajInterface } from '../portfolio/arrayInterface';
 
-type ImageHandlerProps = {
-    imgArr: Array<ImageAttributes>;
+export type ImageHandlerProps = {
+    imgArr:(ImageAttributes | NaprodajInterface)[];
     height: string;
-    frameNum: string
+    frameNum?: string
 }
 
 const ImageHandler = ({imgArr, height, frameNum}: ImageHandlerProps) => {
     const [text, setText] = useState('');
-    const [foundImg, setFoundImage] = useState([]);
+    const [foundImgs, setFoundImages] = useState<ImageAttributes[]>([]);
     const [isImageSearched, setIsImageSearched] = useState(false);
     const searchFound = useRef(true);
 
@@ -21,7 +21,7 @@ const ImageHandler = ({imgArr, height, frameNum}: ImageHandlerProps) => {
             <div>
                  <SetImages
                  //check if searchArr is empty else show all results
-                 imgArr={(foundImg.length === 0) ? imgArr: foundImg}
+                 imgArr={(foundImgs.length === 0) ? imgArr: foundImgs}
                  height={height}
                  frameNum={frameNum}
                 />
@@ -31,13 +31,13 @@ const ImageHandler = ({imgArr, height, frameNum}: ImageHandlerProps) => {
     // reset search bar and images when clicking different link
     useEffect(() => {
         setText('');
-        setFoundImage([]);
+        setFoundImages([]);
     }, [imgArr])
 
     /* this checks if search found images or the term is not found and
     triggers the notFound component */
     useEffect(() => {
-        if (isImageSearched && foundImg.length === 0) {
+        if (isImageSearched && foundImgs.length === 0) {
             searchFound.current = false;
         } else {
             searchFound.current = true;
@@ -46,18 +46,18 @@ const ImageHandler = ({imgArr, height, frameNum}: ImageHandlerProps) => {
         return () => {
             setIsImageSearched(false);
         }
-    }, [isImageSearched, foundImg])
+    }, [isImageSearched, foundImgs])
 
     const handleTextChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setText((event.target).value);
 
         if (text.length === 1) {
-            setFoundImage([]);
+            setFoundImages([]);
         }
     };
 
     const handleFoundImage = (foundArr: ImageAttributes) => {
-        setFoundImage( (prevArr) => [...prevArr, foundArr]);
+        setFoundImages( (prevArr) => [...prevArr, foundArr]);
 
     };
 
@@ -69,7 +69,7 @@ const ImageHandler = ({imgArr, height, frameNum}: ImageHandlerProps) => {
     const handleEnterKey = (event: React.KeyboardEvent<HTMLInputElement>) => {
 
         if (event.key === 'Enter') {
-            setFoundImage([]);
+            setFoundImages([]);
             handleSearchClick();
         }
         if (event.key === 'Enter' && text.length === 0) {
@@ -78,7 +78,7 @@ const ImageHandler = ({imgArr, height, frameNum}: ImageHandlerProps) => {
     };
 
     const handleSearchIcon = () => {
-        setFoundImage([]);
+        setFoundImages([]);
         handleSearchClick();
 
         if (text.length === 0) {

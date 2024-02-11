@@ -33,8 +33,8 @@ function Content () {
                     index element={
                         <ImageHandler
                         imgArr={MergedArr}
-                        height={180}
-                        frameNum={""}
+                        height="180"
+                        frameNum=""
                         />
                     } />
 
@@ -43,7 +43,7 @@ function Content () {
                     element={
                         <ImageHandler
                         imgArr={RastlineArr}
-                        height={220}
+                        height="220"
                         />
                     } />
 
@@ -52,7 +52,7 @@ function Content () {
                     element={
                         <ImageHandler
                         imgArr={ZivaliArr}
-                        height={180}
+                        height="180"
                         frameNum={"frame-num"}
                         />
                     } />
@@ -62,7 +62,7 @@ function Content () {
                     element={
                         <ImageHandler
                         imgArr={PortretiArr}
-                        height={180}
+                        height="180"
                         />
                     } />
 
@@ -71,7 +71,7 @@ function Content () {
                     element={
                         <ImageHandler
                         imgArr={DigitalnaArr}
-                        height={180}
+                        height="180"
                         />
                     } />
 
@@ -80,7 +80,7 @@ function Content () {
                     element={
                         <ImageHandler
                         imgArr={OstaloArr}
-                        height={180}
+                        height="180"
                         frameNum={"frame-num"}
                         />
                     } />
@@ -91,7 +91,7 @@ function Content () {
                     index element={
                         <ImageHandler
                         imgArr={NaprodajArr}
-                        height={200}
+                        height="200"
                         frameNum={"frame-num"}/>
                     }/>
 
