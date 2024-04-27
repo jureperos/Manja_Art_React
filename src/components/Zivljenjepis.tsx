@@ -5,6 +5,10 @@ function Zivljenjepis() {
     <>
       <h1 className='cv-title'>UMETNIŠKE IZKUŠNJE</h1>
       <ul className='cv-list'>
+        <li>2024: Naročilo Krajinskega parka Ljubljanjsko barje</li>
+
+        <li>2024: Razstava ilustracij "Življenje na Goričkem: Ilustracije živalskih vrst" v Pokrajinski in študijski knjižnici Murska Sobota</li>
+
         <li>2024: Pridobljen certifikat o opravljenem tečaju znanstvene in naravoslovne ilustracije (Transmitting Science) </li>
 
         <li>2023 - 2024: Naročilo Prirodoslovnega muzeja Slovenije ilustracij različnih živalskih in rastlinskih vrst ter pokrajin</li>
