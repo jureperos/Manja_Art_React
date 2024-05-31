@@ -2,6 +2,26 @@ import { ImageAttributes } from "./arrayInterface"
 
 const DigitalnaArr: Array<ImageAttributes> = [
   {
+    src: '/assets/digital/lj_barje_cas.jpg',
+    title: 'Ljubljansko barje skozi čas',
+    description: 'Digitalna ilustracija',
+  },
+  {
+    src: '/assets/digital/zivljenje_jarek.jpg',
+    title: 'Življenje v jarku',
+    description: 'Digitalna ilustracija',
+  },
+  {
+    src: '/assets/digital/ojezeritev_barja.jpg',
+    title: 'Ojezeritev Ljubljanskega barja',
+    description: 'Digitalna ilustracija',
+  },
+  {
+    src: '/assets/digital/prerez_šotnih_tal.jpg',
+    title: 'Prerez šotnih tal',
+    description: 'Digitalna ilustracija',
+  },
+  {
     src: '/assets/digital/tiranozaver.png',
     title: 'Tiranozaver',
     sciName: 'Tiranozaver rex',
